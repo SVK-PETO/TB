@@ -3,590 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>K105 Rules Of Engagement (ROE)</title>
-    <style>
-        body {
-            font-family: sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-            counter-reset: section;
-        }
-        .container {
-            max-width: 900px;
-            margin: 30px auto;
-            background-color: #fff;
-            padding: 25px 40px;
-            border-radius: 8px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.1);
-        }
-        h1 {
-            text-align: center;
-            color: #5a2d82;
-            margin-bottom: 10px;
-        }
-        h2 {
-            color: #8a4dbf;
-            border-bottom: 2px solid #eee;
-            padding-bottom: 5px;
-            margin-top: 35px;
-            margin-bottom: 20px;
-            counter-increment: section;
-            counter-reset: list-item;
-        }
-        h2::before {
-            content: counter(section) " ";
-            font-weight: bold;
-            margin-right: 5px;
-        }
-        ol {
-            padding-left: 0;
-            list-style: none;
-            margin-left: 10px;
-        }
-        ol li {
-            margin-bottom: 12px;
-            position: relative;
-            padding-left: 45px;
-            counter-increment: list-item;
-        }
-        ol li::before {
-             content: counter(section) "." counter(list-item);
-             font-weight: bold;
-             color: #5a2d82;
-             position: absolute;
-             left: 0;
-             width: 40px;
-             text-align: left;
-        }
-        strong, b {
-            font-weight: bold;
-        }
-        .effective-date {
-            text-align: center;
-            font-weight: bold;
-            color: #d9534f;
-            margin-bottom: 20px;
-            font-size: 1.1em;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 15px;
-            margin-bottom: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #e9d8f5;
-            font-weight: bold;
-        }
-        .judges-info strong { /* Applied directly within the list item now */
-             color: #5a2d82;
-        }
-        .chats-section ul {
-             list-style: disc;
-             padding-left: 30px;
-             margin-left: 15px;
-        }
-        .chats-section li {
-            margin-bottom: 5px;
-            padding-left: 0;
-            position: static;
-            counter-increment: none;
-        }
-         .chats-section li::before {
-             content: none;
-        }
-         .language-selector {
-            text-align: right;
-            margin-bottom: 20px;
-         }
-         .language-selector label {
-            margin-right: 8px;
-            font-weight: bold;
-         }
-         .language-selector select {
-            padding: 5px 8px;
-            border-radius: 4px;
-            border: 1px solid #ccc;
-         }
-         #translation-disclaimer {
-            background-color: #fff3cd;
-            color: #856404;
-            border: 1px solid #ffeeba;
-            padding: 10px 15px;
-            border-radius: 4px;
-            margin-top: 15px;
-            margin-bottom: 20px;
-            display: none;
-            text-align: center;
-            font-style: italic;
-         }
-         /* Removed .tax-note style as it's integrated into rule 5.2 now */
-         .rule-note { /* Optional: Style for the note part within the list item */
-            display: block; /* Ensures it starts on a new line if needed */
-            font-size: 0.95em;
-            color: #555;
-            margin-top: 5px; /* Adds a little space above the note */
-            /* font-style: italic; */ /* Optional styling */
-         }
-    </style>
+    <title data-translate="page_title">K105 ROE - Total Battle</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-
-        <div class="language-selector">
-            <label for="lang-select" data-translate-key="select_language_label">Select Language:</label>
-            <select id="lang-select">
-                <option value="en">English (Official)</option>
-                <option value="sk">Slovenčina</option>
-                <option value="cs">Čeština</option>
-                <option value="it">Italiano</option>
-                <option value="es">Español</option>
-                <option value="pl">Polski</option>
-            </select>
+    <header>
+        <div class="controls">
+            <div class="language-selector">
+                <label for="lang-switch" data-translate="lang_select_label">Language:</label>
+                <select id="lang-switch">
+                    <option value="en">English (Official)</option>
+                    <option value="cs">Česky</option>
+                    <option value="pl">Polski</option>
+                    <option value="it">Italiano</option>
+                    <option value="es">Español</option>
+                    <option value="fr">Français</option>
+                    <option value="pt">Português</option>
+                    <option value="ru">Русский</option>
+                    <option value="zh">中文 (简体)</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+            </div>
+            <button id="dark-mode-toggle" data-translate="dark_mode_toggle">Toggle Dark Mode</button>
         </div>
+        <div id="translation-disclaimer" class="disclaimer" style="display: none;">
+            <p data-translate="translation_warning">This version is machine translated. The English version is the officially valid one.</p>
+        </div>
+    </header>
 
-        <h1 data-translate-key="main_title">Kingdom K105 - Rules Of Engagement (ROE)</h1>
-        <p class="effective-date" data-translate-key="effective_date">ROE EFFECTIVE IMMEDIATELY</p>
+    <main>
+        <h1 data-translate="main_title">Total Battle – Kingdom K105 – Rules Of Engagement (ROE)</h1>
+        <p class="effective-date" data-translate="effective_date">ROE EFFECTIVE 2025-04-08</p>
 
-        <p id="translation-disclaimer" data-translate-key="translation_disclaimer">This is a machine translation. The English version is the official binding document.</p>
+        <!-- Section 1: Kingdom and Clans -->
+        <section>
+             <img src="images/kingdom_clans.png" alt="Kingdom and Clans Visual" class="chapter-image">
+            <h2 data-translate="section1_title_no_number">Kingdom and Clans</h2>
+            <ol>
+                <li data-translate="rule1_1">Always be respectful in chats and PMs with other players. Vulgar, offensive, and racist comments will not be tolerated.</li>
+                <li data-translate="rule1_2">All players are to follow the Rules Of Engagement (ROE), as stated here.</li>
+                <li data-translate="rule1_3">All clans are to be "ROE Compliant" and state this on their clan page, in the first line, "We follow K105-ROE https://svk-peto.github.io/TB/".</li>
+                <li data-translate="rule1_4">All clans are to have their diplomat listed on their clan page, elsewhere diplomat is clan leader.</li>
+                <li data-translate="rule1_5">All players in ROE compliant clans are protected by this ROE.</li>
+                <li data-translate="rule1_6">This ROE only protects players in human clans that are ROE compliant.</li>
+                <li data-translate="rule1_7">All players with hero level 10 and down are protected regardless of clan status.</li>
+                <li data-translate="rule1_8">The ROE is a "living document" and will be updated as needed, by the palace.</li>
+            </ol>
+        </section>
 
-        <h2 data-translate-key="section1_title">Kingdom and Clans</h2>
-        <ol>
-            <li data-translate-key="rule1_1">Always be respectful in chats and PMs with other players. Vulgar, offensive, and racist comments will not be tolerated.</li>
-            <li data-translate-key="rule1_2">All players are to follow the Rules Of Engagement (ROE), as stated here.</li>
-            <li data-translate-key="rule1_3">All clans are to be "ROE Compliant" and state this on their clan page, in the first line, "We follow K105-ROE".</li>
-            <li data-translate-key="rule1_4">All clans are to have their diplomat listed on their clan page, elsewhere diplomat is clan leader.</li>
-            <li data-translate-key="rule1_5">All players in ROE compliant clans are protected by this ROE.</li>
-            <li data-translate-key="rule1_6">This ROE only protects players in human clans that are ROE compliant.</li>
-            <li data-translate-key="rule1_7">All players with hero level 10 and down are protected regardless of clan status.</li>
-            <li data-translate-key="rule1_8">The ROE is a "living document" and will be updated as needed, by the palace.</li>
-        </ol>
+        <!-- Section 2: Clan Territory and Resources -->
+        <section>
+             <img src="images/territory_resources.png" alt="Territory and Resources Visual" class="chapter-image">
+            <h2 data-translate="section2_title_no_number">Clan Territory and Resources</h2>
+            <ol>
+                <li data-translate="rule2_1">All resources in a clan's territory, belong exclusively to that clan. This includes Dragon Mounds (DM) and Well Springs (WS). A clan can defend their resources, as they see fit.</li>
+                <li data-translate="rule2_2">Monsters, Citadels, Crypts, and Arenas belong to the kingdom, regardless of location.</li>
+                <li data-translate="rule2_3">Player built mines belong exclusively to that player. In case of dispute ownership must be proven by: screenshot ("Created by..."), inside or toughing clan’s territory.</li>
+                <li data-translate="rule2_4">Game generated mines belong to the player that occupies it, for as long as they occupy it. There is no registration, except DM and WS.</li>
+                <li data-translate="rule2_5">All Dragon Mounds (DM), except those within clan territory, must be registered in K105/DM and Well Springs (WS), except those within clan territory, must be registered at K105/WS.</li>
+                <li data-translate="rule2_6">The first player to register DM or WS owns it and must occupy within 10 minutes or loses ownership.</li>
+                <li data-translate="rule2_7">You may only occupy 1 DM and 1 WS at a time and may only occupy 2 of each from reset to reset.</li>
+                <li data-translate="rule2_8">Illegally occupied DM or WS may be properly registered and attacked by anyone at any time.</li>
+            </ol>
+        </section>
 
-        <h2 data-translate-key="section2_title">Clan Territory and Resources</h2>
-        <ol>
-            <li data-translate-key="rule2_1">All resources (rss) in a clan's territory, belong exclusively to that clan. This includes Dragon Mounds (DM) and Well Springs (WS). A clan can defend their resources, as they see fit.</li>
-            <li data-translate-key="rule2_2">Monsters, Citadels, Crypts, and Arenas belong to the kingdom, regardless of location.</li>
-            <li data-translate-key="rule2_3">Player built mines belong exclusively to that player. In case of dispute ownership must be proven by: screenshot ("Created by..."), inside or thoughing clans territory.</li>
-            <li data-translate-key="rule2_4">Game generated mines belong to the player that occupies it, for as long as they occupy it. There is no registration, except DM and WS.</li>
-            <li data-translate-key="rule2_5">All Dragon Mounds (DM), except those within clan territory, must be registered in K105/DM and Well Springs (WS), except those within clan territory, must be registered at K105/WS.</li>
-            <li data-translate-key="rule2_6">The first player to register DM or WS owns it and must occupy within 10 minutes or loses ownership.</li>
-            <li data-translate-key="rule2_7">You may only occupy 1 DM and 1 WS at a time and may only occupy 2 of each from reset to reset.</li>
-            <li data-translate-key="rule2_8">Illegally occupied DM or WS may be properly registered and attacked by anyone at any time.</li>
-        </ol>
+        <!-- Section 3: Attacks and scouting -->
+        <section>
+             <img src="images/attacks_scouting.png" alt="Attacks and Scouting Visual" class="chapter-image">
+            <h2 data-translate="section3_title_no_number">Attacks and scouting</h2>
+            <ol>
+                <li data-translate="rule3_1">This kingdom is always at peace (including COT).</li>
+                <li data-translate="rule3_2">Players are allowed to agree to exchange attacks, as they see fit, at any time.</li>
+                <li data-translate="rule3_3">No attacking and scouting clan buildings (forts, capitals, etc.) in any kingdom.</li>
+            </ol>
+        </section>
 
-        <h2 data-translate-key="section3_title">Attacks</h2>
-        <ol>
-             <li data-translate-key="rule3_1">This kingdom is always at peace (including COT).</li>
-             <li data-translate-key="rule3_2">Players are allowed to agree to exchange attacks, as they see fit, at any time.</li>
-             <li data-translate-key="rule3_3">No attacking and scouting clan buildings (forts, capitals, etc) in any kingdom.</li>
-        </ol>
+        <!-- Section 4: Court -->
+        <section>
+             <img src="images/court.png" alt="Court Visual" class="chapter-image">
+            <h2 data-translate="section4_title_no_number">Court</h2>
+            <ol>
+                <li data-translate="rule4_1">All illegal attacks and scouting can either be compensated or retaliated, not both.</li>
+                <li data-translate="rule4_2">If seeking compensation, follow the procedure in section 5. Compensation rules are in section 5), if seeking retaliation see section 4.
+                   <span data-translate="rule4_2_edited_note">(Note: Original text referenced 5.3, likely meant 5. Compensation rules are in section 5)</span>
+                </li>
+                <li data-translate="rule4_3">All players are expected to handle compensation between themselves within 24 hours. If the issue can not be resolved, the clan diplomat takes over and if it is still not resolved within the next 24 hours, present the issue to the judge.</li>
+                <li data-translate="rule4_4">All compensation claims for an illegal attack must be submitted within 72 hours or no claim will be honoured.</li>
+                <li data-translate="rule4_5">Not paying court ordered compensation will result in outlaw status until it is paid.</li>
+                <li data-translate="rule4_6">All decisions by the Court are final.</li>
+                <li data-translate="rule4_7">The players Gandafes and KingdomOfGAG have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. Violations of that will lead to bad titles or outlaw status.</li>
+            </ol>
+        </section>
 
-        <h2 data-translate-key="section4_title">Court</h2>
-        <ol>
-            <li data-translate-key="rule4_1">All illegal attacks and scouting can either be compensated or retaliated, not both.</li>
-            <li data-translate-key="rule4_2">If seeking compensation, follow the procedure in 4.3, if seeking retaliation see section 3.</li>
-            <li data-translate-key="rule4_3">All players are expected to handle compensation between themselves within 24 hours. If the issue can not be resolved, the clan diplomat takes over and if it is still not resolved within the next 24 hours, present the issue to the judge.</li>
-            <li data-translate-key="rule4_4">All compensation claims for an illegal attacks must be submitted within 72 hours or no claim will be honored.</li>
-            <li data-translate-key="rule4_5">Not paying court ordered compensation will result in outlaw status until it is paid.</li>
-            <li data-translate-key="rule4_6">All decisions by the Court are final.</li>
-            <li data-translate-key="rule4_7">The players <strong>Gandafes</strong> and <strong>KingdomOfGAG</strong> have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. Violations of that will lead to bad titles or outlaw status.</li>
-        </ol>
+        <!-- Section 5: Taxes -->
+        <section>
+             <img src="images/taxes.png" alt="Taxes Visual" class="chapter-image">
+            <h2 data-translate="section5_title_no_number">Taxes</h2>
+            <!-- Body 5.1 a 5.2 ako odseky s ručným číslovaním -->
+            <p data-translate="rule5_1"><span class="rule-number">5.1.</span> All players are expected to pay all of their taxes in a timely manner.</p>
+            <p data-translate="rule5_2"><span class="rule-number">5.2.</span> The values listed below are the maximum allowable ingots permitted within your city (over 1-day production). If you exceed these numbers, anyone may attack your city to collect the taxes. If attacker fail to get enough ingots (game may show outdated value, ingots sent before attack...) attack will be considered illegal.</p>
 
-        <h2 data-translate-key="section5_title">Taxes</h2>
-        <ol>
-            <li data-translate-key="rule5_1">All players are expected to pay all of their taxes in a timely manner.</li>
-            <li data-translate-key="rule5_2">The values listed below are the maximum allowable ingots permitted within your city (1 day production). If you exceed these numbers, anyone may attack your city to collect the taxes. <span class="rule-note">If attacker fail to get enough ignots (game may show outdated value) attack will be considered illegal.</span></li>
-        </ol>
+            <table class="tax-table">
+                <thead>
+                    <tr>
+                        <th data-translate="tax_header_level">City Levels</th> <!-- Text zmenený -->
+                        <th data-translate="tax_header_ingots">Maximum Allowed Ingots in City</th> <!-- Text zmenený -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- data-label atribúty aktualizované tak, aby zodpovedali textu v hlavičke -->
+                    <tr>
+                        <td data-translate="tax_range_1" data-label="City Levels: ">01-24</td>
+                        <td data-translate="tax_ingots_1" data-label="Maximum Allowed Ingots in City: ">10000 INGOTS</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="tax_range_2" data-label="City Levels: ">25-34</td>
+                        <td data-translate="tax_ingots_2" data-label="Maximum Allowed Ingots in City: ">30000 INGOTS</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="tax_range_3" data-label="City Levels: ">35-39</td>
+                        <td data-translate="tax_ingots_3" data-label="Maximum Allowed Ingots in City: ">40000 INGOTS</td>
+                    </tr>
+                    <tr>
+                        <td data-translate="tax_range_4" data-label="City Levels: ">40-45</td>
+                        <td data-translate="tax_ingots_4" data-label="Maximum Allowed Ingots in City: ">50000 INGOTS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
-        <h3 data-translate-key="tax_table_title">MAXIMUM ALLOWED INGOTS IN CITY</h3>
-        <table>
-            <thead>
-                <tr>
-                    <th data-translate-key="tax_table_header1">CITY LEVELS</th>
-                    <th data-translate-key="tax_table_header2">MAXIMUM ALLOWED INGOTS</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>01-24</td>
-                    <td data-translate-key="tax_ingots1">10000 INGOTS</td>
-                </tr>
-                <tr>
-                    <td>25-34</td>
-                    <td data-translate-key="tax_ingots2">30000 INGOTS</td>
-                </tr>
-                 <tr>
-                    <td>35-39</td>
-                    <td data-translate-key="tax_ingots3">40000 INGOTS</td>
-                </tr>
-                 <tr>
-                    <td>40-45</td>
-                    <td data-translate-key="tax_ingots4">50000 INGOTS</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <div class="chats-section">
-            <h2 data-translate-key="section_chats_title">All official kingdom chats:</h2>
+        <!-- Section 6: Official Chats -->
+        <section>
+             <img src="images/chats.png" alt="Official Chats Visual" class="chapter-image">
+            <h2 data-translate="chats_title_no_number">All official kingdom chats</h2> <!-- Pridané slovo "All" -->
             <ul>
-                <li>K105-ROE</li>
-                <li>K105/DM</li>
-                <li>K105/WS</li>
+                <li data-translate="chat_roe">K105-ROE</li>
+                <li data-translate="chat_dm">K105/DM</li>
+                <li data-translate="chat_ws">K105/WS</li>
             </ul>
-        </div>
+        </section>
 
-    </div> <!-- /container -->
+    </main>
 
-<script>
-    // --- Translation Data (with rule 5.2 note merged) ---
-    const translations = {
-        // English (Official)
-        en: {
-            page_title: "K105 Rules Of Engagement (ROE)",
-            select_language_label: "Select Language:",
-            main_title: "Kingdom K105 - Rules Of Engagement (ROE)",
-            effective_date: "ROE EFFECTIVE IMMEDIATELY",
-            translation_disclaimer: "This is a machine translation. The English version is the official binding document.",
-            section1_title: "Kingdom and Clans",
-            rule1_1: "Always be respectful in chats and PMs with other players. Vulgar, offensive, and racist comments will not be tolerated.",
-            rule1_2: "All players are to follow the Rules Of Engagement (ROE), as stated here.",
-            rule1_3: "All clans are to be \"ROE Compliant\" and state this on their clan page, in the first line, \"We follow K105-ROE\".",
-            rule1_4: "All clans are to have their diplomat listed on their clan page, elsewhere diplomat is clan leader.",
-            rule1_5: "All players in ROE compliant clans are protected by this ROE.",
-            rule1_6: "This ROE only protects players in human clans that are ROE compliant.",
-            rule1_7: "All players with hero level 10 and down are protected regardless of clan status.",
-            rule1_8: "The ROE is a \"living document\" and will be updated as needed, by the palace.",
-            section2_title: "Clan Territory and Resources",
-            rule2_1: "All resources (rss) in a clan's territory, belong exclusively to that clan. This includes Dragon Mounds (DM) and Well Springs (WS). A clan can defend their resources, as they see fit.",
-            rule2_2: "Monsters, Citadels, Crypts, and Arenas belong to the kingdom, regardless of location.",
-            rule2_3: "Player built mines belong exclusively to that player. In case of dispute ownership must be proven by: screenshot (\"Created by...\"), inside or thoughing clans territory.",
-            rule2_4: "Game generated mines belong to the player that occupies it, for as long as they occupy it. There is no registration, except DM and WS.",
-            rule2_5: "All Dragon Mounds (DM), except those within clan territory, must be registered in K105/DM and Well Springs (WS), except those within clan territory, must be registered at K105/WS.",
-            rule2_6: "The first player to register DM or WS owns it and must occupy within 10 minutes or loses ownership.",
-            rule2_7: "You may only occupy 1 DM and 1 WS at a time and may only occupy 2 of each from reset to reset.",
-            rule2_8: "Illegally occupied DM or WS may be properly registered and attacked by anyone at any time.",
-            section3_title: "Attacks",
-            rule3_1: "This kingdom is always at peace (including COT).",
-            rule3_2: "Players are allowed to agree to exchange attacks, as they see fit, at any time.",
-            rule3_3: "No attacking and scouting clan buildings (forts, capitals, etc) in any kingdom.",
-            section4_title: "Court",
-            rule4_1: "All illegal attacks and scouting can either be compensated or retaliated, not both.",
-            rule4_2: "If seeking compensation, follow the procedure in 4.3, if seeking retaliation see section 3.",
-            rule4_3: "All players are expected to handle compensation between themselves within 24 hours. If the issue can not be resolved, the clan diplomat takes over and if it is still not resolved within the next 24 hours, present the issue to the judge.",
-            rule4_4: "All compensation claims for an illegal attacks must be submitted within 72 hours or no claim will be honored.",
-            rule4_5: "Not paying court ordered compensation will result in outlaw status until it is paid.",
-            rule4_6: "All decisions by the Court are final.",
-            rule4_7: "The players <strong>Gandafes</strong> and <strong>KingdomOfGAG</strong> have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. Violations of that will lead to bad titles or outlaw status.",
-            section5_title: "Taxes",
-            rule5_1: "All players are expected to pay all of their taxes in a timely manner.",
-            rule5_2: "The values listed below are the maximum allowable ingots permitted within your city (1 day production). If you exceed these numbers, anyone may attack your city to collect the taxes. <span class=\"rule-note\">If attacker fail to get enough ignots (game may show outdated value) attack will be considered illegal.</span>", // Note merged here
-            tax_table_title: "MAXIMUM ALLOWED INGOTS IN CITY",
-            tax_table_header1: "CITY LEVELS",
-            tax_table_header2: "MAXIMUM ALLOWED INGOTS",
-            tax_ingots1: "10000 INGOTS",
-            tax_ingots2: "30000 INGOTS",
-            tax_ingots3: "40000 INGOTS",
-            tax_ingots4: "50000 INGOTS",
-            section_chats_title: "All official kingdom chats:"
-        },
-        // Slovak (Machine Translation - Merged Note)
-        sk: {
-            page_title: "K105 Pravidlá zapojenia (ROE)",
-            select_language_label: "Vyberte jazyk:",
-            main_title: "Kráľovstvo K105 - Pravidlá zapojenia (ROE)",
-            effective_date: "ROE PLATNÉ OKAMŽITE",
-            translation_disclaimer: "Toto je strojový preklad. Anglická verzia je oficiálny záväzný dokument.",
-            section1_title: "Kráľovstvo a klany",
-            rule1_1: "Vždy buďte v chatoch a PM s ostatnými hráčmi zdvorilí. Vulgárne, urážlivé a rasistické komentáre nebudú tolerované.",
-            rule1_2: "Všetci hráči musia dodržiavať Pravidlá zapojenia (ROE), ako sú tu uvedené.",
-            rule1_3: "Všetky klany musia byť „ROE Compliant“ a uviesť to na svojej klanovej stránke v prvom riadku: „Dodržiavame K105-ROE“.",
-            rule1_4: "Všetky klany musia mať svojho diplomata uvedeného na stránke klanu, inak je diplomat vodca klanu.",
-            rule1_5: "Všetci hráči v klanoch, ktoré sú v súlade s ROE, sú chránení týmito ROE.",
-            rule1_6: "Tieto ROE chránia iba hráčov v ľudských klanoch, ktoré sú v súlade s ROE.",
-            rule1_7: "Všetci hráči s úrovňou hrdinu 10 a nižšie sú chránení bez ohľadu na status klanu.",
-            rule1_8: "ROE sú „živý dokument“ a budú aktualizované podľa potreby palácom.",
-            section2_title: "Územie klanu a zdroje",
-            rule2_1: "Všetky zdroje (rss) na území klanu patria výhradne tomuto klanu. To zahŕňa Dračie mohyly (DM) a Pramene (WS). Klan môže brániť svoje zdroje, ako uzná za vhodné.",
-            rule2_2: "Príšery, Citadely, Krypty a Arény patria kráľovstvu, bez ohľadu na ich polohu.",
-            rule2_3: "Bane postavené hráčom patria výhradne tomuto hráčovi. V prípade sporu musí byť vlastníctvo preukázané: snímkou obrazovky („Vytvoril...“), vo vnútri alebo cez územie klanu.",
-            rule2_4: "Bane generované hrou patria hráčovi, ktorý ich obsadzuje, po dobu, kým ich obsadzuje. Neexistuje žiadna registrácia, okrem DM a WS.",
-            rule2_5: "Všetky Dračie mohyly (DM), okrem tých na území klanu, musia byť zaregistrované v K105/DM a Pramene (WS), okrem tých na území klanu, musia byť zaregistrované v K105/WS.",
-            rule2_6: "Prvý hráč, ktorý zaregistruje DM alebo WS, ho vlastní a musí ho obsadiť do 10 minút, inak stráca vlastníctvo.",
-            rule2_7: "Môžete obsadiť iba 1 DM a 1 WS naraz a môžete obsadiť iba 2 z každého od resetu po reset.",
-            rule2_8: "Nelegálne obsadené DM alebo WS môžu byť riadne zaregistrované a napadnuté kýmkoľvek a kedykoľvek.",
-            section3_title: "Útoky",
-            rule3_1: "Toto kráľovstvo je vždy v mieri (vrátane COT).",
-            rule3_2: "Hráči sa môžu kedykoľvek dohodnúť na výmene útokov, ako uznajú za vhodné.",
-            rule3_3: "Žiadne útočenie a špehovanie klanových budov (pevnosti, hlavné mestá atď.) v žiadnom kráľovstve.",
-            section4_title: "Súd",
-            rule4_1: "Všetky nelegálne útoky a špehovanie môžu byť buď kompenzované, alebo môže byť vykonaná odveta, nie oboje.",
-            rule4_2: "Ak žiadate kompenzáciu, postupujte podľa postupu v bode 4.3, ak žiadate odvetu, pozrite si sekciu 3.",
-            rule4_3: "Očakáva sa, že všetci hráči vyriešia kompenzáciu medzi sebou do 24 hodín. Ak sa problém nedá vyriešiť, preberá ho klanový diplomat a ak sa stále nevyrieši do ďalších 24 hodín, predložte problém sudcovi.",
-            rule4_4: "Všetky žiadosti o kompenzáciu za nelegálne útoky musia byť podané do 72 hodín, inak nárok nebude uznaný.",
-            rule4_5: "Nezaplatenie súdom nariadenej kompenzácie bude mať za následok status vyhnanca (outlaw), kým nebude zaplatená.",
-            rule4_6: "Všetky rozhodnutia súdu sú konečné.",
-            rule4_7: "Hráči <strong>Gandafes</strong> a <strong>KingdomOfGAG</strong> boli menovaní za sudcov kráľovstva. Budú sa starať o miestnosti pre Dračie mohyly a Pramene. Taktiež riešia všetky problémy, ktoré sa nedajú vyriešiť medzi diplomatmi. Ich rozhodnutia musia byť vždy rešpektované a dodržiavané. Porušenie tohto povedie k zlým titulom alebo statusu vyhnanca.",
-            section5_title: "Dane",
-            rule5_1: "Očakáva sa, že všetci hráči zaplatia všetky svoje dane včas.",
-            rule5_2: "Nižšie uvedené hodnoty sú maximálne povolené ingoty vo vašom meste (1 denná produkcia). Ak tieto čísla prekročíte, ktokoľvek môže zaútočiť na vaše mesto, aby vybral dane. <span class=\"rule-note\">Ak útočník nezíska dostatok ingotov (hra môže ukazovať zastaranú hodnotu), útok bude považovaný za nelegálny.</span>", // Note merged
-            tax_table_title: "MAXIMÁLNE POVOLENÉ INGOTY V MESTE",
-            tax_table_header1: "ÚROVEŇ MESTA",
-            tax_table_header2: "MAXIMÁLNY POČET INGOTOV",
-            tax_ingots1: "10000 INGOTOV",
-            tax_ingots2: "30000 INGOTOV",
-            tax_ingots3: "40000 INGOTOV",
-            tax_ingots4: "50000 INGOTOV",
-            section_chats_title: "Všetky oficiálne chaty kráľovstva:"
-        },
-        // Czech (Machine Translation - Merged Note)
-        cs: {
-            page_title: "K105 Pravidla zapojení (ROE)",
-            select_language_label: "Zvolte jazyk:",
-            main_title: "Království K105 - Pravidla zapojení (ROE)",
-            effective_date: "ROE PLATNÉ OKAMŽITĚ",
-            translation_disclaimer: "Toto je strojový překlad. Anglická verze je oficiální závazný dokument.",
-            section1_title: "Království a klany",
-            rule1_1: "Vždy buďte uctiví v chatech a soukromých zprávách s ostatními hráči. Vulgární, urážlivé a rasistické komentáře nebudou tolerovány.",
-            rule1_2: "Všichni hráči musí dodržovat Pravidla zapojení (ROE), jak je zde uvedeno.",
-            rule1_3: "Všechny klany musí být „v souladu s ROE“ a uvést to na své klanové stránce v prvním řádku: „Dodržujeme K105-ROE“.",
-            rule1_4: "Všechny klany musí mít svého diplomata uvedeného na své klanové stránce, jinak je diplomatem vůdce klanu.",
-            rule1_5: "Všichni hráči v klanech splňujících ROE jsou chráněni tímto ROE.",
-            rule1_6: "Toto ROE chrání pouze hráče v lidských klanech, které jsou v souladu s ROE.",
-            rule1_7: "Všichni hráči s úrovní hrdiny 10 a nižší jsou chráněni bez ohledu na status klanu.",
-            rule1_8: "ROE je „živý dokument“ a bude podle potřeby aktualizován palácem.",
-            section2_title: "Území klanu a zdroje",
-            rule2_1: "Všechny zdroje (rss) na území klanu patří výhradně tomuto klanu. To zahrnuje Dračí mohyly (DM) a Studny (WS). Klan může bránit své zdroje, jak uzná za vhodné.",
-            rule2_2: "Příšery, Citadely, Krypta a Arény patří království bez ohledu na umístění.",
-            rule2_3: "Doly postavené hráčem patří výhradně tomuto hráči. V případě sporu musí být vlastnictví prokázáno: snímkem obrazovky („Vytvořil...“), uvnitř nebo přes území klanu.",
-            rule2_4: "Doly generované hrou patří hráči, který je obsazuje, po dobu, po kterou je obsazuje. Neexistuje žádná registrace, kromě DM a WS.",
-            rule2_5: "Všechny Dračí mohyly (DM), kromě těch na území klanu, musí být registrovány v K105/DM a Studny (WS), kromě těch na území klanu, musí být registrovány v K105/WS.",
-            rule2_6: "První hráč, který zaregistruje DM nebo WS, je vlastní a musí je obsadit do 10 minut, jinak ztrácí vlastnictví.",
-            rule2_7: "Můžete obsadit pouze 1 DM a 1 WS současně a můžete obsadit pouze 2 od každého od resetu k resetu.",
-            rule2_8: "Nelegálně obsazené DM nebo WS mohou být řádně zaregistrovány a napadeny kýmkoli a kdykoli.",
-            section3_title: "Útoky",
-            rule3_1: "Toto království je vždy v míru (včetně COT).",
-            rule3_2: "Hráči se mohou kdykoli dohodnout na výměně útoků, jak uznají za vhodné.",
-            rule3_3: "Žádné útočení a špehování klanových budov (pevnosti, hlavní města atd.) v žádném království.",
-            section4_title: "Soud",
-            rule4_1: "Všechny nelegální útoky a špehování mohou být buď kompenzovány, nebo může být provedena odveta, ne obojí.",
-            rule4_2: "Pokud žádáte o kompenzaci, postupujte podle postupu v 4.3, pokud žádáte o odvetu, viz sekce 3.",
-            rule4_3: "Očekává se, že všichni hráči vyřeší kompenzaci mezi sebou do 24 hodin. Pokud problém nelze vyřešit, převezme ho klanový diplomat a pokud stále není vyřešen do dalších 24 hodin, předložte problém soudci.",
-            rule4_4: "Všechny žádosti o kompenzaci za nelegální útoky musí být podány do 72 hodin, jinak nárok nebude uznán.",
-            rule4_5: "Nezaplacení soudem nařízené kompenzace bude mít za následek status psance, dokud nebude zaplacena.",
-            rule4_6: "Všechna rozhodnutí soudu jsou konečná.",
-            rule4_7: "Hráči <strong>Gandafes</strong> a <strong>KingdomOfGAG</strong> byli jmenováni soudci království. Postarají se o místnosti Dračích mohyl a Studní. Starají se také o všechny problémy, které nelze vyřešit mezi diplomaty. Jejich rozhodnutí musí být vždy respektována a dodržována. Porušení toho povede ke špatným titulům nebo statusu psance.",
-            section5_title: "Daně",
-            rule5_1: "Očekává se, že všichni hráči zaplatí všechny své daně včas.",
-            rule5_2: "Níže uvedené hodnoty jsou maximální povolené ingoty ve vašem městě (1 denní produkce). Pokud tato čísla překročíte, kdokoli může zaútočit na vaše město, aby vybral daně. <span class=\"rule-note\">Pokud útočník nezíská dostatek ingotů (hra může ukazovat zastaralou hodnotu), útok bude považován za nelegální.</span>", // Note merged
-            tax_table_title: "MAXIMÁLNÍ POVOLENÉ INGOTY VE MĚSTĚ",
-            tax_table_header1: "ÚROVEŇ MĚSTA",
-            tax_table_header2: "MAXIMÁLNÍ POČET INGOTŮ",
-            tax_ingots1: "10000 INGOTŮ",
-            tax_ingots2: "30000 INGOTŮ",
-            tax_ingots3: "40000 INGOTŮ",
-            tax_ingots4: "50000 INGOTŮ",
-            section_chats_title: "Všechny oficiální chaty království:"
-        },
-        // Italian (Machine Translation - Merged Note)
-        it: {
-            page_title: "K105 Regole di Ingaggio (ROE)",
-            select_language_label: "Seleziona Lingua:",
-            main_title: "Regno K105 - Regole di Ingaggio (ROE)",
-            effective_date: "ROE EFFETTIVE IMMEDIATAMENTE",
-            translation_disclaimer: "Questa è una traduzione automatica. La versione inglese è il documento ufficiale vincolante.",
-            section1_title: "Regno e Clan",
-            rule1_1: "Sii sempre rispettoso nelle chat e nei PM con altri giocatori. Commenti volgari, offensivi e razzisti non saranno tollerati.",
-            rule1_2: "Tutti i giocatori devono seguire le Regole di Ingaggio (ROE), come qui indicato.",
-            rule1_3: "Tutti i clan devono essere \"Conformi alle ROE\" e dichiararlo sulla pagina del clan, nella prima riga: \"Seguiamo K105-ROE\".",
-            rule1_4: "Tutti i clan devono avere il loro diplomatico elencato sulla pagina del clan, altrimenti il diplomatico è il capo del clan.",
-            rule1_5: "Tutti i giocatori nei clan conformi alle ROE sono protetti da queste ROE.",
-            rule1_6: "Queste ROE proteggono solo i giocatori nei clan umani che sono conformi alle ROE.",
-            rule1_7: "Tutti i giocatori con livello eroe 10 o inferiore sono protetti indipendentemente dallo stato del clan.",
-            rule1_8: "Le ROE sono un \"documento vivente\" e saranno aggiornate secondo necessità, dal palazzo.",
-            section2_title: "Territorio del Clan e Risorse",
-            rule2_1: "Tutte le risorse (rss) nel territorio di un clan appartengono esclusivamente a quel clan. Ciò include i Tumuli del Drago (DM) e le Sorgenti (WS). Un clan può difendere le proprie risorse come ritiene opportuno.",
-            rule2_2: "Mostri, Cittadelle, Cripte e Arene appartengono al regno, indipendentemente dalla posizione.",
-            rule2_3: "Le miniere costruite dai giocatori appartengono esclusivamente a quel giocatore. In caso di disputa, la proprietà deve essere provata tramite: screenshot (\"Creato da...\"), all'interno o attraverso il territorio del clan.",
-            rule2_4: "Le miniere generate dal gioco appartengono al giocatore che le occupa, per tutto il tempo in cui le occupa. Non c'è registrazione, tranne DM e WS.",
-            rule2_5: "Tutti i Tumuli del Drago (DM), tranne quelli all'interno del territorio del clan, devono essere registrati in K105/DM e le Sorgenti (WS), tranne quelle all'interno del territorio del clan, devono essere registrate in K105/WS.",
-            rule2_6: "Il primo giocatore a registrare DM o WS ne diventa proprietario e deve occuparlo entro 10 minuti o perde la proprietà.",
-            rule2_7: "Puoi occupare solo 1 DM e 1 WS alla volta e puoi occuparne solo 2 di ciascuno da reset a reset.",
-            rule2_8: "DM o WS occupati illegalmente possono essere registrati correttamente e attaccati da chiunque in qualsiasi momento.",
-            section3_title: "Attacchi",
-            rule3_1: "Questo regno è sempre in pace (incluso COT).",
-            rule3_2: "I giocatori possono accordarsi per scambiare attacchi, come ritengono opportuno, in qualsiasi momento.",
-            rule3_3: "Nessun attacco e scouting agli edifici del clan (forti, capitali, ecc.) in nessun regno.",
-            section4_title: "Corte",
-            rule4_1: "Tutti gli attacchi illegali e lo scouting possono essere compensati o oggetto di rappresaglia, non entrambi.",
-            rule4_2: "Se si cerca un risarcimento, seguire la procedura nel 4.3, se si cerca una rappresaglia vedere la sezione 3.",
-            rule4_3: "Tutti i giocatori sono tenuti a gestire il risarcimento tra loro entro 24 ore. Se il problema non può essere risolto, subentra il diplomatico del clan e se non viene ancora risolto entro le successive 24 ore, presentare il problema al giudice.",
-            rule4_4: "Tutte le richieste di risarcimento per attacchi illegali devono essere presentate entro 72 ore o nessuna richiesta sarà onorata.",
-            rule4_5: "Non pagare il risarcimento ordinato dal tribunale comporterà lo status di fuorilegge fino al pagamento.",
-            rule4_6: "Tutte le decisioni della Corte sono definitive.",
-            rule4_7: "I giocatori <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> sono stati nominati giudici per il regno. Si occuperanno delle stanze dei Tumuli del Drago e delle Sorgenti. Si occupano anche di tutte le questioni che non possono essere risolte tra diplomatici. Le loro decisioni devono essere rispettate e seguite sempre. Le violazioni comporteranno titoli negativi o lo status di fuorilegge.",
-            section5_title: "Tasse",
-            rule5_1: "Tutti i giocatori sono tenuti a pagare tutte le loro tasse tempestivamente.",
-            rule5_2: "I valori elencati di seguito sono i lingotti massimi consentiti all'interno della tua città (produzione di 1 giorno). Se superi questi numeri, chiunque può attaccare la tua città per riscuotere le tasse. <span class=\"rule-note\">Se l'attaccante non riesce a ottenere abbastanza lingotti (il gioco potrebbe mostrare un valore obsoleto), l'attacco sarà considerato illegale.</span>", // Note merged
-            tax_table_title: "LINGOTTI MASSIMI CONSENTITI IN CITTÀ",
-            tax_table_header1: "LIVELLI CITTÀ",
-            tax_table_header2: "LINGOTTI MASSIMI CONSENTITI",
-            tax_ingots1: "10000 LINGOTTI",
-            tax_ingots2: "30000 LINGOTTI",
-            tax_ingots3: "40000 LINGOTTI",
-            tax_ingots4: "50000 LINGOTTI",
-            section_chats_title: "Tutte le chat ufficiali del regno:"
-        },
-        // Spanish (Machine Translation - Merged Note)
-        es: {
-            page_title: "K105 Reglas de Enfrentamiento (ROE)",
-            select_language_label: "Seleccionar Idioma:",
-            main_title: "Reino K105 - Reglas de Enfrentamiento (ROE)",
-            effective_date: "ROE EN VIGOR INMEDIATAMENTE",
-            translation_disclaimer: "Esta es una traducción automática. La versión en inglés es el documento oficial vinculante.",
-            section1_title: "Reino y Clanes",
-            rule1_1: "Sé siempre respetuoso en los chats y mensajes privados (PM) con otros jugadores. No se tolerarán comentarios vulgares, ofensivos ni racistas.",
-            rule1_2: "Todos los jugadores deben seguir las Reglas de Enfrentamiento (ROE), tal como se establecen aquí.",
-            rule1_3: "Todos los clanes deben ser \"Compatibles con ROE\" y declararlo en la página de su clan, en la primera línea: \"Seguimos K105-ROE\".",
-            rule1_4: "Todos los clanes deben tener a su diplomático listado en la página de su clan, en caso contrario, el diplomático es el líder del clan.",
-            rule1_5: "Todos los jugadores en clanes compatibles con ROE están protegidos por estas ROE.",
-            rule1_6: "Estas ROE solo protegen a los jugadores en clanes humanos que son compatibles con ROE.",
-            rule1_7: "Todos los jugadores con nivel de héroe 10 o inferior están protegidos independientemente del estado del clan.",
-            rule1_8: "Las ROE son un \"documento vivo\" y serán actualizadas según sea necesario por el palacio.",
-            section2_title: "Territorio del Clan y Recursos",
-            rule2_1: "Todos los recursos (rss) en el territorio de un clan pertenecen exclusivamente a ese clan. Esto incluye Montículos de Dragón (DM) y Manantiales (WS). Un clan puede defender sus recursos como considere oportuno.",
-            rule2_2: "Monstruos, Ciudadelas, Criptas y Arenas pertenecen al reino, independientemente de su ubicación.",
-            rule2_3: "Las minas construidas por jugadores pertenecen exclusivamente a ese jugador. En caso de disputa, la propiedad debe probarse mediante: captura de pantalla (\"Creado por...\"), dentro o a través del territorio del clan.",
-            rule2_4: "Las minas generadas por el juego pertenecen al jugador que las ocupa, durante el tiempo que las ocupe. No hay registro, excepto DM y WS.",
-            rule2_5: "Todos los Montículos de Dragón (DM), excepto los que están dentro del territorio del clan, deben registrarse en K105/DM y los Manantiales (WS), excepto los que están dentro del territorio del clan, deben registrarse en K105/WS.",
-            rule2_6: "El primer jugador en registrar un DM o WS lo posee y debe ocuparlo en 10 minutos o pierde la propiedad.",
-            rule2_7: "Solo puedes ocupar 1 DM y 1 WS a la vez y solo puedes ocupar 2 de cada uno de reinicio a reinicio.",
-            rule2_8: "Los DM o WS ocupados ilegalmente pueden ser registrados correctamente y atacados por cualquiera en cualquier momento.",
-            section3_title: "Ataques",
-            rule3_1: "Este reino está siempre en paz (incluido COT).",
-            rule3_2: "Los jugadores pueden acordar intercambiar ataques, como consideren oportuno, en cualquier momento.",
-            rule3_3: "No atacar ni explorar edificios de clan (fuertes, capitales, etc.) en ningún reino.",
-            section4_title: "Corte",
-            rule4_1: "Todos los ataques ilegales y la exploración pueden ser compensados o objeto de represalia, no ambos.",
-            rule4_2: "Si busca compensación, siga el procedimiento en 4.3, si busca represalia vea la sección 3.",
-            rule4_3: "Se espera que todos los jugadores manejen la compensación entre ellos dentro de las 24 horas. Si el problema no se puede resolver, el diplomático del clan se hace cargo y si aún no se resuelve dentro de las siguientes 24 horas, presente el problema al juez.",
-            rule4_4: "Todas las reclamaciones de compensación por ataques ilegales deben presentarse dentro de las 72 horas o no se aceptará ninguna reclamación.",
-            rule4_5: "No pagar la compensación ordenada por la corte resultará en un estado de proscrito hasta que se pague.",
-            rule4_6: "Todas las decisiones de la Corte son finales.",
-            rule4_7: "Los jugadores <strong>Gandafes</strong> y <strong>KingdomOfGAG</strong> han sido nombrados jueces del reino. Se encargarán de las salas de Montículos de Dragón y Manantiales. También se ocupan de todos los problemas que no pueden resolverse entre diplomáticos. Sus decisiones deben ser respetadas y seguidas siempre. Las violaciones de esto llevarán a malos títulos o estado de proscrito.",
-            section5_title: "Impuestos",
-            rule5_1: "Se espera que todos los jugadores paguen todos sus impuestos de manera oportuna.",
-            rule5_2: "Los valores listados a continuación son los lingotes máximos permitidos dentro de tu ciudad (producción de 1 día). Si excedes estos números, cualquiera puede atacar tu ciudad para cobrar los impuestos. <span class=\"rule-note\">Si el atacante no logra obtener suficientes lingotes (el juego puede mostrar un valor desactualizado), el ataque se considerará ilegal.</span>", // Note merged
-            tax_table_title: "LINGOTES MÁXIMOS PERMITIDOS EN LA CIUDAD",
-            tax_table_header1: "NIVELES DE CIUDAD",
-            tax_table_header2: "LINGOTES MÁXIMOS PERMITIDOS",
-            tax_ingots1: "10000 LINGOTES",
-            tax_ingots2: "30000 LINGOTES",
-            tax_ingots3: "40000 LINGOTES",
-            tax_ingots4: "50000 LINGOTES",
-            section_chats_title: "Todos los chats oficiales del reino:"
-        },
-        // Polish (Machine Translation - Merged Note)
-        pl: {
-            page_title: "K105 Zasady Zaangażowania (ROE)",
-            select_language_label: "Wybierz język:",
-            main_title: "Królestwo K105 - Zasady Zaangażowania (ROE)",
-            effective_date: "ROE OBOWIĄZUJĄCE NATYCHMIAST",
-            translation_disclaimer: "To jest tłumaczenie maszynowe. Wersja angielska jest oficjalnym wiążącym dokumentem.",
-            section1_title: "Królestwo i Klany",
-            rule1_1: "Zawsze bądź pełen szacunku na czatach i w wiadomościach prywatnych (PM) z innymi graczami. Wulgarne, obraźliwe i rasistowskie komentarze nie będą tolerowane.",
-            rule1_2: "Wszyscy gracze muszą przestrzegać Zasad Zaangażowania (ROE), jak tu określono.",
-            rule1_3: "Wszystkie klany muszą być „Zgodne z ROE” i podać to na swojej stronie klanu, w pierwszej linijce: „Przestrzegamy K105-ROE”.",
-            rule1_4: "Wszystkie klany muszą mieć swojego dyplomatę wymienionego na stronie klanu, w przeciwnym razie dyplomatą jest lider klanu.",
-            rule1_5: "Wszyscy gracze w klanach zgodnych z ROE są chronieni przez te ROE.",
-            rule1_6: "Te ROE chronią tylko graczy w ludzkich klanach, które są zgodne z ROE.",
-            rule1_7: "Wszyscy gracze z poziomem bohatera 10 i niższym są chronieni niezależnie od statusu klanu.",
-            rule1_8: "ROE to „żywy dokument” i będzie aktualizowany w miarę potrzeb przez pałac.",
-            section2_title: "Terytorium Klanu i Zasoby",
-            rule2_1: "Wszystkie zasoby (rss) na terytorium klanu należą wyłącznie do tego klanu. Obejmuje to Smocze Kopce (DM) i Źródła (WS). Klan może bronić swoich zasobów, jak uzna za stosowne.",
-            rule2_2: "Potwory, Cytadele, Krypty i Areny należą do królestwa, niezależnie od lokalizacji.",
-            rule2_3: "Kopalnie zbudowane przez graczy należą wyłącznie do tego gracza. W razie sporu własność musi zostać udowodniona: zrzutem ekranu („Stworzone przez...”), wewnątrz lub przez terytorium klanu.",
-            rule2_4: "Kopalnie generowane przez grę należą do gracza, który je zajmuje, tak długo, jak je zajmuje. Nie ma rejestracji, z wyjątkiem DM i WS.",
-            rule2_5: "Wszystkie Smocze Kopce (DM), z wyjątkiem tych na terytorium klanu, muszą być zarejestrowane w K105/DM, a Źródła (WS), z wyjątkiem tych na terytorium klanu, muszą być zarejestrowane w K105/WS.",
-            rule2_6: "Pierwszy gracz, który zarejestruje DM lub WS, jest jego właścicielem i musi je zająć w ciągu 10 minut, inaczej traci własność.",
-            rule2_7: "Możesz zajmować tylko 1 DM i 1 WS jednocześnie i możesz zająć tylko 2 z każdego od resetu do resetu.",
-            rule2_8: "Nielegalnie zajęte DM lub WS mogą zostać prawidłowo zarejestrowane i zaatakowane przez kogokolwiek w dowolnym momencie.",
-            section3_title: "Ataki",
-            rule3_1: "To królestwo jest zawsze w pokoju (w tym COT).",
-            rule3_2: "Gracze mogą uzgodnić wymianę ataków, jak uznają za stosowne, w dowolnym momencie.",
-            rule3_3: "Brak atakowania i zwiadu budynków klanowych (forty, stolice itp.) w żadnym królestwie.",
-            section4_title: "Sąd",
-            rule4_1: "Wszystkie nielegalne ataki i zwiad mogą być albo zrekompensowane, albo odwetowane, nie oba.",
-            rule4_2: "Jeśli ubiegasz się o odszkodowanie, postępuj zgodnie z procedurą w 4.3, jeśli ubiegasz się o odwet, zobacz sekcję 3.",
-            rule4_3: "Oczekuje się, że wszyscy gracze załatwią odszkodowanie między sobą w ciągu 24 godzin. Jeśli problemu nie można rozwiązać, przejmuje go dyplomata klanu, a jeśli nadal nie zostanie rozwiązany w ciągu następnych 24 godzin, przedstaw sprawę sędziemu.",
-            rule4_4: "Wszelkie roszczenia o odszkodowanie za nielegalne ataki muszą zostać złożone w ciągu 72 godzin, w przeciwnym razie roszczenie nie zostanie uwzględnione.",
-            rule4_5: "Niezapłacenie odszkodowania nakazanego przez sąd spowoduje status banity do czasu zapłaty.",
-            rule4_6: "Wszystkie decyzje Sądu są ostateczne.",
-            rule4_7: "Gracze <strong>Gandafes</strong> i <strong>KingdomOfGAG</strong> zostali mianowani sędziami królestwa. Zajmą się pokojami Smoczych Kopców i Źródeł. Zajmują się również wszystkimi problemami, których nie można rozwiązać między dyplomatami. Ich decyzje muszą być zawsze szanowane i przestrzegane. Naruszenia tego doprowadzą do złych tytułów lub statusu banity.",
-            section5_title: "Podatki",
-            rule5_1: "Oczekuje się, że wszyscy gracze zapłacą wszystkie swoje podatki w odpowiednim czasie.",
-            rule5_2: "Wartości wymienione poniżej to maksymalna dozwolona ilość sztabek w twoim mieście (produkcja 1-dniowa). Jeśli przekroczysz te liczby, ktokolwiek może zaatakować twoje miasto, aby zebrać podatki. <span class=\"rule-note\">Jeśli atakujący nie zdobędzie wystarczającej ilości sztabek (gra może pokazywać nieaktualną wartość), atak zostanie uznany za nielegalny.</span>", // Note merged
-            tax_table_title: "MAKSYMALNA DOZWOLONA ILOŚĆ SZTABEK W MIEŚCIE",
-            tax_table_header1: "POZIOMY MIASTA",
-            tax_table_header2: "MAKSYMALNA DOZWOLONA ILOŚĆ SZTABEK",
-            tax_ingots1: "10000 SZTABEK",
-            tax_ingots2: "30000 SZTABEK",
-            tax_ingots3: "40000 SZTABEK",
-            tax_ingots4: "50000 SZTABEK",
-            section_chats_title: "Wszystkie oficjalne czaty królestwa:"
-        }
-    };
+    <footer>
+    </footer>
 
-    // --- Language Switching Logic ---
-    const langSelect = document.getElementById('lang-select');
-    const disclaimer = document.getElementById('translation-disclaimer');
-    const translatableElements = document.querySelectorAll('[data-translate-key]');
-
-    function setLanguage(langCode) {
-        const langTranslations = translations[langCode] || translations.en;
-        const defaultTranslations = translations.en;
-
-        document.title = langTranslations.page_title || defaultTranslations.page_title;
-
-        translatableElements.forEach(element => {
-            const key = element.getAttribute('data-translate-key');
-            // Directly use the translation key, which now includes the note for rule5_2
-            if (langTranslations[key] !== undefined) {
-                element.innerHTML = langTranslations[key];
-            } else if (defaultTranslations[key] !== undefined) {
-                element.innerHTML = defaultTranslations[key]; // Fallback to English
-            } else {
-                 element.innerHTML = ''; // Clear if key is missing (shouldn't happen)
-            }
-        });
-
-        if (langCode === 'en') {
-            disclaimer.style.display = 'none';
-        } else {
-            const disclaimerKey = disclaimer.getAttribute('data-translate-key');
-            disclaimer.innerHTML = langTranslations[disclaimerKey] || defaultTranslations[disclaimerKey];
-            disclaimer.style.display = 'block';
-        }
-
-        document.documentElement.lang = langCode;
-    }
-
-    langSelect.addEventListener('change', (event) => {
-        setLanguage(event.target.value);
-    });
-
-    document.addEventListener('DOMContentLoaded', () => {
-        setLanguage('en'); // Set default language on page load
-    });
-
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
