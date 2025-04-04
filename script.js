@@ -44,21 +44,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "All compensation claims for an illegal attack must be submitted within 72 hours or no claim will be honoured.",
             rule4_5: "Not paying court ordered compensation will result in outlaw status until it is paid.",
             rule4_6: "All decisions by the Court are final.",
-            rule4_7: "The players Gandafes and KingdomOfGAG have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. Violations of that will lead to bad titles or outlaw status.",
+            rule4_7: "The players <strong>Gandafes</strong> and <strong>KingdomOfGAG</strong> have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. Violations of that will lead to bad titles or outlaw status.", // Zvýraznené mená
             section5_title_no_number: "Taxes",
             rule5_1: "All players are expected to pay all of their taxes in a timely manner.",
             rule5_2: "The values listed below are the maximum allowable ingots permitted within your city (over 1-day production). If you exceed these numbers, anyone may attack your city to collect the taxes. If attacker fail to get enough ingots (game may show outdated value, ingots sent before attack...) attack will be considered illegal.",
-            tax_header_level: "City Levels", // Zmenené
-            tax_header_ingots: "Maximum Allowed Ingots in City", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 INGOTS",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 INGOTS",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 INGOTS",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 INGOTS",
-            chats_title_no_number: "All official kingdom chats", // Zmenené
+            tax_header_level: "City Levels",
+            tax_header_ingots: "Maximum Allowed Ingots in City",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Ingots", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Ingots", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Ingots", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Ingots", // Zmenené písmeno
+            chats_title_no_number: "All official kingdom chats",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -100,21 +100,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Všechny nároky na kompenzaci za nelegální útok musí být podány do 72 hodin, jinak nárok nebude uznán.",
             rule4_5: "Nezaplacení soudem nařízené kompenzace bude mít za následek status psance (outlaw status), dokud nebude zaplacena.",
             rule4_6: "Všechna rozhodnutí Soudu jsou konečná.",
-            rule4_7: "Hráči Gandafes a KingdomOfGAG byli jmenováni soudci království. Postarají se o místnosti Dragon Mound a Wellspring. Starají se také o všechny problémy, které nelze vyřešit mezi diplomaty. Jejich rozhodnutí musí být vždy respektována a dodržována. Porušení tohoto povede ke špatným titulům nebo statusu psance.",
+            rule4_7: "Hráči <strong>Gandafes</strong> a <strong>KingdomOfGAG</strong> byli jmenováni soudci království. Postarají se o místnosti Dragon Mound a Wellspring. Starají se také o všechny problémy, které nelze vyřešit mezi diplomaty. Jejich rozhodnutí musí být vždy respektována a dodržována. Porušení tohoto povede ke špatným titulům nebo statusu psance.", // Zvýraznené mená
             section5_title_no_number: "Daně",
             rule5_1: "Očekává se, že všichni hráči zaplatí všechny své daně včas.",
             rule5_2: "Níže uvedené hodnoty představují maximální povolené ingoty ve vašem městě (nad 1denní produkci). Pokud tato čísla překročíte, kdokoli může zaútočit na vaše město, aby vybral daně. Pokud útočník nezíská dostatek ingotů (hra může ukazovat zastaralou hodnotu, ingoty odeslané před útokem...), útok bude považován za nelegální.",
-            tax_header_level: "Úrovně města", // Zmenené
-            tax_header_ingots: "Maximální povolené ingoty ve městě", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 INGOTŮ",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 INGOTŮ",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 INGOTŮ",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 INGOTŮ",
-            chats_title_no_number: "Všechny oficiální chaty království", // Zmenené
+            tax_header_level: "Úrovně města",
+            tax_header_ingots: "Maximální povolené ingoty ve městě",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Ingotů", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Ingotů", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Ingotů", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Ingotů", // Zmenené písmeno
+            chats_title_no_number: "Všechny oficiální chaty království",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -156,21 +156,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Wszystkie roszczenia o odszkodowanie za nielegalny atak muszą zostać złożone w ciągu 72 godzin, w przeciwnym razie roszczenie nie zostanie uwzględnione.",
             rule4_5: "Niezapłacenie odszkodowania zarządzonego przez sąd spowoduje status banity (outlaw status), dopóki nie zostanie zapłacone.",
             rule4_6: "Wszystkie decyzje Sądu są ostateczne.",
-            rule4_7: "Gracze Gandafes i KingdomOfGAG zostali mianowani sędziami królestwa. Zajmą się pokojami Dragon Mound i Wellspring. Zajmują się również wszystkimi kwestiami, których nie można rozwiązać między dyplomatami. Ich decyzje muszą być zawsze szanowane i przestrzegane. Naruszenia tego doprowadzą do złych tytułów lub statusu banity.",
+            rule4_7: "Gracze <strong>Gandafes</strong> i <strong>KingdomOfGAG</strong> zostali mianowani sędziami królestwa. Zajmą się pokojami Dragon Mound i Wellspring. Zajmują się również wszystkimi kwestiami, których nie można rozwiązać między dyplomatami. Ich decyzje muszą być zawsze szanowane i przestrzegane. Naruszenia tego doprowadzą do złych tytułów lub statusu banity.", // Zvýraznené mená
             section5_title_no_number: "Podatki",
             rule5_1: "Oczekuje się, że wszyscy gracze zapłacą wszystkie swoje podatki w odpowiednim czasie.",
             rule5_2: "Poniższe wartości to maksymalne dozwolone sztabki (ingots) dozwolone w Twoim mieście (ponad 1-dniową produkcję). Jeśli przekroczysz te liczby, każdy może zaatakować Twoje miasto, aby zebrać podatki. Jeśli atakujący nie zdobędzie wystarczającej ilości sztabek (gra może pokazywać nieaktualną wartość, sztabki wysłane przed atakiem...), atak zostanie uznany za nielegalny.",
-            tax_header_level: "Poziomy miasta", // Zmenené
-            tax_header_ingots: "Maksymalna dozwolona ilość sztabek w mieście", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 SZTABEK",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 SZTABEK",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 SZTABEK",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 SZTABEK",
-            chats_title_no_number: "Wszystkie oficjalne czaty królestwa", // Zmenené
+            tax_header_level: "Poziomy miasta",
+            tax_header_ingots: "Maksymalna dozwolona ilość sztabek w mieście",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Sztabek", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Sztabek", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Sztabek", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Sztabek", // Zmenené písmeno
+            chats_title_no_number: "Wszystkie oficjalne czaty królestwa",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -212,21 +212,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Tutte le richieste di risarcimento per un attacco illegale devono essere presentate entro 72 ore o nessuna richiesta sarà onorata.",
             rule4_5: "Il mancato pagamento del risarcimento ordinato dal tribunale comporterà lo status di fuorilegge (outlaw status) fino al pagamento.",
             rule4_6: "Tutte le decisioni della Corte sono definitive.",
-            rule4_7: "I giocatori Gandafes e KingdomOfGAG sono stati nominati giudici per il regno. Si occuperanno delle stanze Dragon Mound e Wellspring. Si occupano anche di tutte le questioni che non possono essere risolte tra diplomatici. Le loro decisioni devono essere rispettate e seguite sempre. Le violazioni di ciò porteranno a titoli negativi o allo status di fuorilegge.",
+            rule4_7: "I giocatori <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> sono stati nominati giudici per il regno. Si occuperanno delle stanze Dragon Mound e Wellspring. Si occupano anche di tutte le questioni che non possono essere risolte tra diplomatici. Le loro decisioni devono essere rispettate e seguite sempre. Le violazioni di ciò porteranno a titoli negativi o allo status di fuorilegge.", // Zvýraznené mená
             section5_title_no_number: "Tasse",
             rule5_1: "Ci si aspetta che tutti i giocatori paghino tutte le loro tasse in modo tempestivo.",
             rule5_2: "I valori elencati di seguito sono i lingotti (ingots) massimi consentiti all'interno della tua città (oltre la produzione di 1 giorno). Se superi questi numeri, chiunque può attaccare la tua città per riscuotere le tasse. Se l'attaccante non riesce a ottenere abbastanza lingotti (il gioco potrebbe mostrare un valore obsoleto, lingotti inviati prima dell'attacco...) l'attacco sarà considerato illegale.",
-            tax_header_level: "Livelli città", // Zmenené
-            tax_header_ingots: "Lingotti massimi consentiti in città", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 LINGOTTI",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 LINGOTTI",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 LINGOTTI",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 LINGOTTI",
-            chats_title_no_number: "Tutte le chat ufficiali del regno", // Zmenené
+            tax_header_level: "Livelli città",
+            tax_header_ingots: "Lingotti massimi consentiti in città",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Lingotti", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Lingotti", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Lingotti", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Lingotti", // Zmenené písmeno
+            chats_title_no_number: "Tutte le chat ufficiali del regno",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -268,21 +268,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Todas las reclamaciones de compensación por un ataque ilegal deben presentarse en un plazo de 72 horas o no se aceptará ninguna reclamación.",
             rule4_5: "No pagar la compensación ordenada por la corte resultará en estado de proscrito (outlaw status) hasta que se pague.",
             rule4_6: "Todas las decisiones de la Corte son finales.",
-            rule4_7: "Los jugadores Gandafes y KingdomOfGAG han sido nombrados jueces del reino. Se encargarán de las salas de Dragon Mound y Wellspring. También se ocupan de todos los asuntos que no pueden resolverse entre diplomáticos. Sus decisiones deben ser respetadas y seguidas siempre. Las violaciones de esto conducirán a malos títulos o estado de proscrito.",
+            rule4_7: "Los jugadores <strong>Gandafes</strong> y <strong>KingdomOfGAG</strong> han sido nombrados jueces del reino. Se encargarán de las salas de Dragon Mound y Wellspring. También se ocupan de todos los asuntos que no pueden resolverse entre diplomáticos. Sus decisiones deben ser respetadas y seguidas siempre. Las violaciones de esto conducirán a malos títulos o estado de proscrito.", // Zvýraznené mená
             section5_title_no_number: "Impuestos",
             rule5_1: "Se espera que todos los jugadores paguen todos sus impuestos de manera oportuna.",
             rule5_2: "Los valores que se enumeran a continuación son los lingotes (ingots) máximos permitidos en su ciudad (sobre la producción de 1 día). Si excede estos números, cualquiera puede atacar su ciudad para cobrar los impuestos. Si el atacante no logra obtener suficientes lingotes (el juego puede mostrar un valor desactualizado, lingotes enviados antes del ataque...) el ataque se considerará ilegal.",
-            tax_header_level: "Niveles de ciudad", // Zmenené
-            tax_header_ingots: "Máximo de lingotes permitidos en la ciudad", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 LINGOTES",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 LINGOTES",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 LINGOTES",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 LINGOTES",
-            chats_title_no_number: "Todos los chats oficiales del reino", // Zmenené
+            tax_header_level: "Niveles de ciudad",
+            tax_header_ingots: "Máximo de lingotes permitidos en la ciudad",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Lingotes", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Lingotes", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Lingotes", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Lingotes", // Zmenené písmeno
+            chats_title_no_number: "Todos los chats oficiales del reino",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', () => {
             rule1_7: "Tous les joueurs ayant un niveau de héros de 10 ou moins sont protégés quel que soit le statut du clan.",
             rule1_8: "Les ROE sont un \"document vivant\" et seront mises à jour au besoin par le palais.",
             section2_title_no_number: "Territoire du Clan et Ressources",
-            rule2_1: "Toutes les ressources sur le territoire d'un clan appartiennent exclusivement à ce clan. Cela inclut les Monticules de Dragon (DM) et les Puits de Source (WS). Un clan peut défendre ses ressources comme il l'entend.",
+            rule2_1: "Toutes les ressources sur le territoire d'un clan appartiennent exclusively à ce clan. Cela inclut les Monticules de Dragon (DM) et les Puits de Source (WS). Un clan peut défendre ses ressources comme il l'entend.",
             rule2_2: "Les Monstres, Citadelles, Cryptes et Arènes appartiennent au royaume, quel que soit leur emplacement.",
             rule2_3: "Les mines construites par les joueurs appartiennent exclusively à ce joueur. En cas de litige, la propriété doit être prouvée par : capture d'écran (\"Créé par...\"), à l'intérieur ou touchant le territoire du clan.",
             rule2_4: "Les mines générées par le jeu appartiennent au joueur qui les occupe, tant qu'il les occupe. Il n'y a pas d'enregistrement, sauf pour les DM et WS.",
@@ -324,21 +324,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Toutes les demandes de compensation pour une attaque illégale doivent être soumises dans les 72 heures, sinon aucune demande ne sera honorée.",
             rule4_5: "Le non-paiement de la compensation ordonnée par le tribunal entraînera le statut de hors-la-loi (outlaw status) jusqu'à ce qu'elle soit payée.",
             rule4_6: "Toutes les décisions de la Cour sont définitives.",
-            rule4_7: "Les joueurs Gandafes et KingdomOfGAG ont été nommés juges pour le royaume. Ils s'occuperont des salles Dragon Mound et Wellspring. Ils s'occupent également de tous les problèmes qui ne peuvent être résolus entre diplomates. Leurs décisions doivent être respectées et suivies en tout temps. Les violations de cela entraîneront de mauvais titres ou le statut de hors-la-loi.",
+            rule4_7: "Les joueurs <strong>Gandafes</strong> et <strong>KingdomOfGAG</strong> ont été nommés juges pour le royaume. Ils s'occuperont des salles Dragon Mound et Wellspring. Ils s'occupent également de tous les problèmes qui ne peuvent être résolus entre diplomates. Leurs décisions doivent être respectées et suivies en tout temps. Les violations de cela entraîneront de mauvais titres ou le statut de hors-la-loi.", // Zvýraznené mená
             section5_title_no_number: "Taxes",
             rule5_1: "Tous les joueurs sont censés payer toutes leurs taxes en temps voulu.",
             rule5_2: "Les valeurs indiquées ci-dessous correspondent au nombre maximum de lingots (ingots) autorisés dans votre ville (au-delà de la production d'une journée). Si vous dépassez ces chiffres, n'importe qui peut attaquer votre ville pour collecter les taxes. Si l'attaquant ne parvient pas à obtenir suffisamment de lingots (le jeu peut afficher une valeur obsolète, lingots envoyés avant l'attaque...), l'attaque sera considérée comme illégale.",
-            tax_header_level: "Niveaux de ville", // Zmenené
-            tax_header_ingots: "Lingots maximum autorisés dans la ville", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 LINGOTS",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 LINGOTS",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 LINGOTS",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 LINGOTS",
-            chats_title_no_number: "Tous les chats officiels du royaume", // Zmenené
+            tax_header_level: "Niveaux de ville",
+            tax_header_ingots: "Lingots maximum autorisés dans la ville",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Lingots", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Lingots", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Lingots", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Lingots", // Zmenené písmeno
+            chats_title_no_number: "Tous les chats officiels du royaume",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -380,21 +380,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Todas as reivindicações de compensação por um ataque ilegal devem ser enviadas dentro de 72 horas ou nenhuma reivindicação será honrada.",
             rule4_5: "Não pagar a compensação ordenada pelo tribunal resultará em status de fora da lei (outlaw status) até que seja paga.",
             rule4_6: "Todas as decisões do Tribunal são finais.",
-            rule4_7: "Os jogadores Gandafes e KingdomOfGAG foram nomeados juízes do reino. Eles cuidarão das salas Dragon Mound e Wellspring. Eles também cuidam de todas as questões que não podem ser resolvidas entre diplomatas. Suas decisões devem ser respeitadas e seguidas sempre. Violações disso levarão a títulos ruins ou status de fora da lei.",
+            rule4_7: "Os jogadores <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> foram nomeados juízes do reino. Eles cuidarão das salas Dragon Mound e Wellspring. Eles também cuidam de todas as questões que não podem ser resolvidas entre diplomatas. Suas decisões devem ser respeitadas e seguidas sempre. Violações disso levarão a títulos ruins ou status de fora da lei.", // Zvýraznené mená
             section5_title_no_number: "Impostos",
             rule5_1: "Espera-se que todos os jogadores paguem todos os seus impostos em tempo hábil.",
             rule5_2: "Os valores listados abaixo são os lingotes (ingots) máximos permitidos em sua cidade (acima da produção de 1 dia). Se você exceder esses números, qualquer pessoa pode atacar sua cidade para coletar os impostos. Se o atacante falhar em obter lingotes suficientes (o jogo pode mostrar valor desatualizado, lingotes enviados antes do ataque...), o ataque será considerado ilegal.",
-            tax_header_level: "Níveis da cidade", // Zmenené
-            tax_header_ingots: "Lingotes máximos permitidos na cidade", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 LINGOTES",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 LINGOTES",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 LINGOTES",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 LINGOTES",
-            chats_title_no_number: "Todos os chats oficiais do reino", // Zmenené
+            tax_header_level: "Níveis da cidade",
+            tax_header_ingots: "Lingotes máximos permitidos na cidade",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 Lingotes", // Zmenené písmeno
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 Lingotes", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 Lingotes", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 Lingotes", // Zmenené písmeno
+            chats_title_no_number: "Todos os chats oficiais do reino",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -436,21 +436,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "Все претензии на компенсацию за незаконную атаку должны быть поданы в течение 72 часов, иначе претензия не будет удовлетворена.",
             rule4_5: "Неуплата компенсации, назначенной судом, приведет к статусу преступника (outlaw status) до тех пор, пока она не будет выплачена.",
             rule4_6: "Все решения Суда являются окончательными.",
-            rule4_7: "Игроки Gandafes и KingdomOfGAG назначены судьями королевства. Они будут заниматься комнатами Драконьих Курганов и Источников. Они также занимаются всеми вопросами, которые не могут быть решены между дипломатами. Их решения должны всегда уважаться и выполняться. Нарушения этого приведут к плохим титулам или статусу преступника.",
+            rule4_7: "Игроки <strong>Gandafes</strong> и <strong>KingdomOfGAG</strong> назначены судьями королевства. Они будут заниматься комнатами Драконьих Курганов и Источников. Они также занимаются всеми вопросами, которые не могут быть решены между дипломатами. Их решения должны всегда уважаться и выполняться. Нарушения этого приведут к плохим титулам или статусу преступника.", // Zvýraznené mená
             section5_title_no_number: "Налоги",
             rule5_1: "Ожидается, что все игроки будут своевременно платить все свои налоги.",
             rule5_2: "Указанные ниже значения представляют собой максимально допустимое количество слитков (ingots) в вашем городе (сверх 1-дневного производства). Если вы превысите эти цифры, любой может атаковать ваш город, чтобы собрать налоги. Если атакующий не сможет получить достаточно слитков (игра может показывать устаревшее значение, слитки отправлены до атаки...), атака будет считаться незаконной.",
-            tax_header_level: "Уровни города", // Zmenené
-            tax_header_ingots: "Максимально допустимое количество слитков в городе", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 СЛИТКОВ",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 СЛИТКОВ",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 СЛИТКОВ",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 СЛИТКОВ",
-            chats_title_no_number: "Все официальные чаты королевства", // Zmenené
+            tax_header_level: "Уровни города",
+            tax_header_ingots: "Максимально допустимое количество слитков в городе",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 слитков", // Zmenené písmeno (ingots -> слитков)
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 слитков", // Zmenené písmeno
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 слитков", // Zmenené písmeno
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 слитков", // Zmenené písmeno
+            chats_title_no_number: "Все официальные чаты королевства",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -492,21 +492,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "所有非法攻击的补偿索赔必须在 72 小时内提交，否则索赔将不予受理。",
             rule4_5: "不支付法院命令的补偿将导致被列为不法之徒 (outlaw status)，直到付清为止。",
             rule4_6: "法庭的所有判决均为最终判决。",
-            rule4_7: "玩家 Gandafes 和 KingdomOfGAG 已被任命为王国的法官。 他们将负责龙丘和泉水房间。 他们还负责处理外交官之间无法解决的所有问题。 必须始终尊重并遵守他们的决定。 违反规定将导致不良头衔或不法之徒身份。",
+            rule4_7: "玩家 <strong>Gandafes</strong> 和 <strong>KingdomOfGAG</strong> 已被任命为王国的法官。 他们将负责龙丘和泉水房间。 他们还负责处理外交官之间无法解决的所有问题。 必须始终尊重并遵守他们的决定。 违反规定将导致不良头衔或不法之徒身份。", // Zvýraznené mená
             section5_title_no_number: "税收",
             rule5_1: "所有玩家都应按时缴纳所有税款。",
             rule5_2: "下面列出的值是您城市中允许的最大铸锭 (ingots) 数量（超过 1 天的产量）。 如果您超过这些数字，任何人都可以攻击您的城市以征收税款。 如果攻击者未能获得足够的铸锭（游戏可能显示过时的值，攻击前发送的铸锭...），攻击将被视为非法。",
-            tax_header_level: "城市等级", // Zmenené
-            tax_header_ingots: "城市中允许的最大铸锭数量", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 铸锭",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 铸锭",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 铸锭",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 铸锭",
-            chats_title_no_number: "所有王国官方聊天室", // Zmenené
+            tax_header_level: "城市等级",
+            tax_header_ingots: "城市中允许的最大铸锭数量",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 铸锭", // Ponechané (bez veľkého/malého písmena)
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 铸锭", // Ponechané
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 铸锭", // Ponechané
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 铸锭", // Ponechané
+            chats_title_no_number: "所有王国官方聊天室",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -548,21 +548,21 @@ document.addEventListener('DOMContentLoaded', () => {
             rule4_4: "एक अवैध हमले के लिए सभी मुआवजे के दावों को 72 घंटों के भीतर प्रस्तुत किया जाना चाहिए अन्यथा किसी भी दावे का सम्मान नहीं किया जाएगा।",
             rule4_5: "अदालत द्वारा आदेशित मुआवजे का भुगतान न करने पर गैरकानूनी स्थिति (outlaw status) होगी जब तक कि इसका भुगतान नहीं किया जाता।",
             rule4_6: "न्यायालय के सभी निर्णय अंतिम हैं।",
-            rule4_7: "खिलाड़ी Gandafes और KingdomOfGAG को किंगडम के लिए न्यायाधीश नियुक्त किया गया है। वे ड्रैगन माउंड और वेलस्प्रिंग कमरों का ध्यान रखेंगे। वे उन सभी मुद्दों का भी ध्यान रखते हैं जिन्हें राजनयिकों के बीच हल नहीं किया जा सकता है। उनके निर्णयों का हमेशा सम्मान और पालन किया जाना चाहिए। इसका उल्लंघन करने पर खराब खिताब या गैरकानूनी स्थिति होगी।",
+            rule4_7: "खिलाड़ी <strong>Gandafes</strong> और <strong>KingdomOfGAG</strong> को किंगडम के लिए न्यायाधीश नियुक्त किया गया है। वे ड्रैगन माउंड और वेलस्प्रिंग कमरों का ध्यान रखेंगे। वे उन सभी मुद्दों का भी ध्यान रखते हैं जिन्हें राजनयिकों के बीच हल नहीं किया जा सकता है। उनके निर्णयों का हमेशा सम्मान और पालन किया जाना चाहिए। इसका उल्लंघन करने पर खराब खिताब या गैरकानूनी स्थिति होगी।", // Zvýraznené mená
             section5_title_no_number: "कर",
             rule5_1: "सभी खिलाड़ियों से अपेक्षा की जाती है कि वे अपने सभी करों का समय पर भुगतान करें।",
             rule5_2: "नीचे सूचीबद्ध मान आपके शहर में अनुमत अधिकतम सिल्लियां (ingots) हैं (1-दिन के उत्पादन से अधिक)। यदि आप इन नंबरों से अधिक हैं, तो कोई भी कर एकत्र करने के लिए आपके शहर पर हमला कर सकता है। यदि हमलावर पर्याप्त सिल्लियां प्राप्त करने में विफल रहता है (गेम पुराना मान दिखा सकता है, हमले से पहले भेजी गई सिल्लियां...) तो हमला अवैध माना जाएगा।",
-            tax_header_level: "शहर के स्तर", // Zmenené
-            tax_header_ingots: "शहर में अनुमत अधिकतम सिल्लियां", // Zmenené
-            tax_range_1: "01-24",
-            tax_ingots_1: "10000 सिल्लियां",
-            tax_range_2: "25-34",
-            tax_ingots_2: "30000 सिल्लियां",
-            tax_range_3: "35-39",
-            tax_ingots_3: "40000 सिल्लियां",
-            tax_range_4: "40-45",
-            tax_ingots_4: "50000 सिल्लियां",
-            chats_title_no_number: "सभी आधिकारिक किंगडम चैट", // Zmenené
+            tax_header_level: "शहर के स्तर",
+            tax_header_ingots: "शहर में अनुमत अधिकतम सिल्लियां",
+            tax_range_1: "01 - 24", // Pridané medzery
+            tax_ingots_1: "10000 सिल्लियां", // Ponechané (bez veľkého/malého písmena)
+            tax_range_2: "25 - 34", // Pridané medzery
+            tax_ingots_2: "30000 सिल्लियां", // Ponechané
+            tax_range_3: "35 - 39", // Pridané medzery
+            tax_ingots_3: "40000 सिल्लियां", // Ponechané
+            tax_range_4: "40 - 45", // Pridané medzery
+            tax_ingots_4: "50000 सिल्लियां", // Ponechané
+            chats_title_no_number: "सभी आधिकारिक किंगडम चैट",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
             chat_ws: "K105/WS",
@@ -582,22 +582,17 @@ document.addEventListener('DOMContentLoaded', () => {
             if (el.tagName === 'TITLE') {
                 el.textContent = translatedText;
             } else {
-                // Zachováme span.rule-number ak existuje v HTML
                  const ruleNumberSpan = el.querySelector('span.rule-number');
                  if (ruleNumberSpan) {
-                     // Ak element obsahuje span pre číslo, aktualizujeme len textový obsah *za* týmto spanom
-                     // Najprv ziskame textovy obsah za spanom
                      let currentTextNode = ruleNumberSpan.nextSibling;
                      while(currentTextNode && currentTextNode.nodeType !== Node.TEXT_NODE) {
                          currentTextNode = currentTextNode.nextSibling;
                      }
-                     // Ak existuje textovy uzol, aktualizujeme ho, inak pridame novy
                      if(currentTextNode) {
-                         currentTextNode.textContent = ' ' + translatedText; // Pridame medzeru za cislom
+                         currentTextNode.textContent = ' ' + translatedText;
                      } else {
                          el.appendChild(document.createTextNode(' ' + translatedText));
                      }
-                     // Odstranime pripadne dalsie textove uzly (ak by tam boli z predosleho prekladu)
                      let nextNode = ruleNumberSpan.nextSibling?.nextSibling;
                       while(nextNode) {
                           if(nextNode.nodeType === Node.TEXT_NODE) {
@@ -605,13 +600,20 @@ document.addEventListener('DOMContentLoaded', () => {
                               nextNode = nextNode.nextSibling;
                               el.removeChild(toRemove);
                           } else {
-                              nextNode = nextNode.nextSibling;
+                               // Ak narazíme na iný element (napr. <strong>), preskočíme ho
+                               nextNode = nextNode.nextSibling;
                           }
                       }
+                       // Špeciálna úprava pre pravidlo 4.7, aby sa HTML tagy v preklade aplikovali
+                      if (key === 'rule4_7') {
+                           el.innerHTML = ruleNumberSpan.outerHTML + ' ' + translatedText;
+                      }
 
-                 } else {
-                      // Ak element neobsahuje span.rule-number, nahradime cely obsah
-                      el.innerHTML = translatedText;
+                 } else if (key === 'rule4_7') { // Aj pre pravidlo 4.7 bez čísla (ak by bolo mimo <ol>)
+                      el.innerHTML = translatedText; // Aplikuj HTML tagy
+                 }
+                 else {
+                      el.innerHTML = translatedText; // Pre ostatné elementy
                  }
             }
 
@@ -623,9 +625,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (labelKey) {
                      const labelText = langData[labelKey] !== undefined ? langData[labelKey] : (translations['en'][labelKey] !== undefined ? translations['en'][labelKey] : `[${labelKey}]`);
-                     el.setAttribute('data-label', labelText + ': '); // Pridá dvojbodku a medzeru
+                     el.setAttribute('data-label', labelText + ': ');
                  } else {
-                     // Fallback ak sa nepodarilo identifikovať labelKey (nemalo by nastať pre aktuálnu tabuľku)
                      el.setAttribute('data-label', '');
                  }
             }
@@ -666,7 +667,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const availableLangs = Object.keys(translations);
     const initialLang = (savedLanguage && availableLangs.includes(savedLanguage)) ? savedLanguage : 'en';
     langSwitch.value = initialLang;
-    // Musíme zavolať setLanguage až po úplnom načítaní DOM, aby sme mohli správne manipulovať s obsahom elementov (hlavne kvôli span.rule-number)
     setLanguage(initialLang);
 
 });
