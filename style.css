@@ -174,7 +174,7 @@ section::after {
 /* --- Obrázky --- */
 .chapter-image {
     float: right;
-    max-width: 200px; /* Maximálna šírka obrázku */
+    max-width: 400px; /* Maximálna šírka obrázku */
     height: auto;
     margin-left: 25px; /* Odsadenie od textu vľavo */
     margin-bottom: 15px; /* Odsadenie pod obrázkom */
