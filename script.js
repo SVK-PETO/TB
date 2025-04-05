@@ -38,26 +38,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "No attacking and scouting clan buildings (forts, capitals, etc.) in any kingdom.",
             section4_title_no_number: "Court",
             rule4_1: "All illegal attacks and scouting can either be compensated or retaliated, not both.",
-            rule4_2: "If seeking compensation, follow the procedure in section 5. Compensation rules are in section 5), if seeking retaliation see section 4.",
-            rule4_2_edited_note: "(Note: Original text referenced 5.3, likely meant 5. Compensation rules are in section 5)",
-            rule4_3: "All players are expected to handle compensation between themselves within 24 hours. If the issue can not be resolved, the clan diplomat takes over and if it is still not resolved within the next 24 hours, present the issue to the judge.",
-            rule4_4: "All compensation claims for an illegal attack must be submitted within 72 hours or no claim will be honoured.",
-            rule4_5: "Not paying court ordered compensation will result in outlaw status until it is paid.",
-            rule4_6: "All decisions by the Court are final.",
-            rule4_7: "The players <strong>Gandafes</strong> and <strong>KingdomOfGAG</strong> have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. Violations of that will lead to bad titles or outlaw status.", // Zvýraznené mená
+            rule4_2: "If seeking compensation, follow the procedure in 4.4, if seeking retaliation see section 4.3.", // Updated
+            rule4_3: "Retaliation attacks are on a hit for hit basis.", // Added
+            rule4_4: "All players are expected to handle compensation between themselves within 24 hours. If the issue can not be resolved, the clan diplomat takes over and if it is still not resolved within the next 24 hours, present the issue to the judge.", // Was 4.3
+            rule4_5: "All compensation claims for an illegal attack must be submitted within 72 hours or no claim will be honoured.", // Was 4.4
+            rule4_6: "Not paying court ordered compensation will result in outlaw status until it is paid.", // Was 4.5
+            rule4_7: "The players <strong>Gandafes</strong> and <strong>KingdomOfGAG</strong> have been appointed as judges for the kingdom. They will take care of the Dragon Mound and Wellspring rooms. They also take care of all issues which cannot be solved between diplomats. Their decisions have to be respected and followed always. All decisions by the Court are final. Violations of that will lead to bad titles or outlaw status.", // Updated (inc. final decisions)
             section5_title_no_number: "Taxes",
             rule5_1: "All players are expected to pay all of their taxes in a timely manner.",
             rule5_2: "The values listed below are the maximum allowable ingots permitted within your city (over 1-day production). If you exceed these numbers, anyone may attack your city to collect the taxes. If attacker fail to get enough ingots (game may show outdated value, ingots sent before attack...) attack will be considered illegal.",
             tax_header_level: "City Levels",
             tax_header_ingots: "Maximum Allowed Ingots in City",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Ingots", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Ingots", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Ingots", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Ingots", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Ingots",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Ingots",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Ingots",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Ingots",
             chats_title_no_number: "All official kingdom chats",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -94,26 +93,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "Žádné útočení a průzkum klanových budov (pevnosti, hlavní města atd.) v žádném království.",
             section4_title_no_number: "Soud",
             rule4_1: "Všechny nelegální útoky a průzkumy mohou být buď kompenzovány, nebo může následovat odveta, nikoli obojí.",
-            rule4_2: "Pokud žádáte kompenzaci, postupujte podle postupu v sekci 5. Pravidla kompenzace jsou v sekci 5), pokud žádáte odvetu, viz sekci 4.",
-            rule4_2_edited_note: "(Poznámka: Původní text odkazoval na 5.3, pravděpodobně míněno 5. Pravidla kompenzace jsou v sekci 5)",
-            rule4_3: "Očekává se, že všichni hráči vyřídí kompenzaci mezi sebou do 24 hodin. Pokud problém nelze vyřešit, převezme ho klanový diplomat, a pokud stále není vyřešen během následujících 24 hodin, předložte problém soudci.",
-            rule4_4: "Všechny nároky na kompenzaci za nelegální útok musí být podány do 72 hodin, jinak nárok nebude uznán.",
-            rule4_5: "Nezaplacení soudem nařízené kompenzace bude mít za následek status psance (outlaw status), dokud nebude zaplacena.",
-            rule4_6: "Všechna rozhodnutí Soudu jsou konečná.",
-            rule4_7: "Hráči <strong>Gandafes</strong> a <strong>KingdomOfGAG</strong> byli jmenováni soudci království. Postarají se o místnosti Dragon Mound a Wellspring. Starají se také o všechny problémy, které nelze vyřešit mezi diplomaty. Jejich rozhodnutí musí být vždy respektována a dodržována. Porušení tohoto povede ke špatným titulům nebo statusu psance.", // Zvýraznené mená
+            rule4_2: "Pokud žádáte kompenzaci, postupujte podle postupu v bodě 4.4, pokud žádáte odvetu, viz sekci 4.3.", // Updated
+            rule4_3: "Odveta je založena na principu útok za útok.", // Added
+            rule4_4: "Očekává se, že všichni hráči vyřídí kompenzaci mezi sebou do 24 hodin. Pokud problém nelze vyřešit, převezme ho klanový diplomat, a pokud stále není vyřešen během následujících 24 hodin, předložte problém soudci.", // Was 4.3
+            rule4_5: "Všechny nároky na kompenzaci za nelegální útok musí být podány do 72 hodin, jinak nárok nebude uznán.", // Was 4.4
+            rule4_6: "Nezaplacení soudem nařízené kompenzace bude mít za následek status psance (outlaw status), dokud nebude zaplacena.", // Was 4.5
+            rule4_7: "Hráči <strong>Gandafes</strong> a <strong>KingdomOfGAG</strong> byli jmenováni soudci království. Postarají se o místnosti Dragon Mound a Wellspring. Starají se také o všechny problémy, které nelze vyřešit mezi diplomaty. Jejich rozhodnutí musí být vždy respektována a dodržována. Všechna rozhodnutí Soudu jsou konečná. Porušení tohoto povede ke špatným titulům nebo statusu psance.", // Updated
             section5_title_no_number: "Daně",
             rule5_1: "Očekává se, že všichni hráči zaplatí všechny své daně včas.",
             rule5_2: "Níže uvedené hodnoty představují maximální povolené ingoty ve vašem městě (nad 1denní produkci). Pokud tato čísla překročíte, kdokoli může zaútočit na vaše město, aby vybral daně. Pokud útočník nezíská dostatek ingotů (hra může ukazovat zastaralou hodnotu, ingoty odeslané před útokem...), útok bude považován za nelegální.",
             tax_header_level: "Úrovně města",
             tax_header_ingots: "Maximální povolené ingoty ve městě",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Ingotů", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Ingotů", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Ingotů", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Ingotů", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Ingotů",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Ingotů",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Ingotů",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Ingotů",
             chats_title_no_number: "Všechny oficiální chaty království",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -150,26 +148,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "Zakaz atakowania i zwiadu budynków klanowych (forty, stolice itp.) w jakimkolwiek królestwie.",
             section4_title_no_number: "Sąd",
             rule4_1: "Wszystkie nielegalne ataki i zwiady mogą być albo zrekompensowane, albo odwetowe, nie oba.",
-            rule4_2: "Jeśli ubiegasz się o odszkodowanie, postępuj zgodnie z procedurą w sekcji 5. Zasady odszkodowania znajdują się w sekcji 5), jeśli szukasz odwetu, zobacz sekcję 4.",
-            rule4_2_edited_note: "(Uwaga: Oryginalny tekst odnosił się do 5.3, prawdopodobnie chodziło o 5. Zasady odszkodowania znajdują się w sekcji 5)",
-            rule4_3: "Oczekuje się, że wszyscy gracze załatwią odszkodowanie między sobą w ciągu 24 godzin. Jeśli problemu nie da się rozwiązać, przejmuje go dyplomata klanu, a jeśli nadal nie zostanie rozwiązany w ciągu następnych 24 godzin, przedstaw sprawę sędziemu.",
-            rule4_4: "Wszystkie roszczenia o odszkodowanie za nielegalny atak muszą zostać złożone w ciągu 72 godzin, w przeciwnym razie roszczenie nie zostanie uwzględnione.",
-            rule4_5: "Niezapłacenie odszkodowania zarządzonego przez sąd spowoduje status banity (outlaw status), dopóki nie zostanie zapłacone.",
-            rule4_6: "Wszystkie decyzje Sądu są ostateczne.",
-            rule4_7: "Gracze <strong>Gandafes</strong> i <strong>KingdomOfGAG</strong> zostali mianowani sędziami królestwa. Zajmą się pokojami Dragon Mound i Wellspring. Zajmują się również wszystkimi kwestiami, których nie można rozwiązać między dyplomatami. Ich decyzje muszą być zawsze szanowane i przestrzegane. Naruszenia tego doprowadzą do złych tytułów lub statusu banity.", // Zvýraznené mená
+            rule4_2: "Jeśli ubiegasz się o odszkodowanie, postępuj zgodnie z procedurą w punkcie 4.4, jeśli szukasz odwetu, zobacz sekcję 4.3.", // Updated
+            rule4_3: "Ataki odwetowe odbywają się na zasadzie cios za cios.", // Added
+            rule4_4: "Oczekuje się, że wszyscy gracze załatwią odszkodowanie między sobą w ciągu 24 godzin. Jeśli problemu nie da się rozwiązać, przejmuje go dyplomata klanu, a jeśli nadal nie zostanie rozwiązany w ciągu następnych 24 godzin, przedstaw sprawę sędziemu.", // Was 4.3
+            rule4_5: "Wszystkie roszczenia o odszkodowanie za nielegalny atak muszą zostać złożone w ciągu 72 godzin, w przeciwnym razie roszczenie nie zostanie uwzględnione.", // Was 4.4
+            rule4_6: "Niezapłacenie odszkodowania zarządzonego przez sąd spowoduje status banity (outlaw status), dopóki nie zostanie zapłacone.", // Was 4.5
+            rule4_7: "Gracze <strong>Gandafes</strong> i <strong>KingdomOfGAG</strong> zostali mianowani sędziami królestwa. Zajmą się pokojami Dragon Mound i Wellspring. Zajmują się również wszystkimi kwestiami, których nie można rozwiązać między dyplomatami. Ich decyzje muszą być zawsze szanowane i przestrzegane. Wszystkie decyzje Sądu są ostateczne. Naruszenia tego doprowadzą do złych tytułów lub statusu banity.", // Updated
             section5_title_no_number: "Podatki",
             rule5_1: "Oczekuje się, że wszyscy gracze zapłacą wszystkie swoje podatki w odpowiednim czasie.",
             rule5_2: "Poniższe wartości to maksymalne dozwolone sztabki (ingots) dozwolone w Twoim mieście (ponad 1-dniową produkcję). Jeśli przekroczysz te liczby, każdy może zaatakować Twoje miasto, aby zebrać podatki. Jeśli atakujący nie zdobędzie wystarczającej ilości sztabek (gra może pokazywać nieaktualną wartość, sztabki wysłane przed atakiem...), atak zostanie uznany za nielegalny.",
             tax_header_level: "Poziomy miasta",
             tax_header_ingots: "Maksymalna dozwolona ilość sztabek w mieście",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Sztabek", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Sztabek", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Sztabek", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Sztabek", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Sztabek",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Sztabek",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Sztabek",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Sztabek",
             chats_title_no_number: "Wszystkie oficjalne czaty królestwa",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -206,26 +203,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "Nessun attacco e scouting di edifici del clan (forti, capitali, ecc.) in nessun regno.",
             section4_title_no_number: "Corte",
             rule4_1: "Tutti gli attacchi e lo scouting illegali possono essere compensati o soggetti a ritorsione, non entrambi.",
-            rule4_2: "Se si cerca un risarcimento, seguire la procedura nella sezione 5. Le regole di risarcimento sono nella sezione 5), se si cerca una ritorsione vedere la sezione 4.",
-            rule4_2_edited_note: "(Nota: il testo originale faceva riferimento a 5.3, probabilmente intendeva 5. Le regole di risarcimento sono nella sezione 5)",
-            rule4_3: "Ci si aspetta che tutti i giocatori gestiscano il risarcimento tra di loro entro 24 ore. Se il problema non può essere risolto, subentra il diplomatico del clan e se non viene ancora risolto entro le successive 24 ore, presentare il problema al giudice.",
-            rule4_4: "Tutte le richieste di risarcimento per un attacco illegale devono essere presentate entro 72 ore o nessuna richiesta sarà onorata.",
-            rule4_5: "Il mancato pagamento del risarcimento ordinato dal tribunale comporterà lo status di fuorilegge (outlaw status) fino al pagamento.",
-            rule4_6: "Tutte le decisioni della Corte sono definitive.",
-            rule4_7: "I giocatori <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> sono stati nominati giudici per il regno. Si occuperanno delle stanze Dragon Mound e Wellspring. Si occupano anche di tutte le questioni che non possono essere risolte tra diplomatici. Le loro decisioni devono essere rispettate e seguite sempre. Le violazioni di ciò porteranno a titoli negativi o allo status di fuorilegge.", // Zvýraznené mená
+            rule4_2: "Se si cerca un risarcimento, seguire la procedura al punto 4.4, se si cerca una ritorsione vedere la sezione 4.3.", // Updated
+            rule4_3: "Gli attacchi di ritorsione sono basati su colpo per colpo.", // Added
+            rule4_4: "Ci si aspetta che tutti i giocatori gestiscano il risarcimento tra di loro entro 24 ore. Se il problema non può essere risolto, subentra il diplomatico del clan e se non viene ancora risolto entro le successive 24 ore, presentare il problema al giudice.", // Was 4.3
+            rule4_5: "Tutte le richieste di risarcimento per un attacco illegale devono essere presentate entro 72 ore o nessuna richiesta sarà onorata.", // Was 4.4
+            rule4_6: "Il mancato pagamento del risarcimento ordinato dal tribunale comporterà lo status di fuorilegge (outlaw status) fino al pagamento.", // Was 4.5
+            rule4_7: "I giocatori <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> sono stati nominati giudici per il regno. Si occuperanno delle stanze Dragon Mound e Wellspring. Si occupano anche di tutte le questioni che non possono essere risolte tra diplomatici. Le loro decisioni devono essere rispettate e seguite sempre. Tutte le decisioni della Corte sono definitive. Le violazioni di ciò porteranno a titoli negativi o allo status di fuorilegge.", // Updated
             section5_title_no_number: "Tasse",
             rule5_1: "Ci si aspetta che tutti i giocatori paghino tutte le loro tasse in modo tempestivo.",
             rule5_2: "I valori elencati di seguito sono i lingotti (ingots) massimi consentiti all'interno della tua città (oltre la produzione di 1 giorno). Se superi questi numeri, chiunque può attaccare la tua città per riscuotere le tasse. Se l'attaccante non riesce a ottenere abbastanza lingotti (il gioco potrebbe mostrare un valore obsoleto, lingotti inviati prima dell'attacco...) l'attacco sarà considerato illegale.",
             tax_header_level: "Livelli città",
             tax_header_ingots: "Lingotti massimi consentiti in città",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Lingotti", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Lingotti", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Lingotti", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Lingotti", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Lingotti",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Lingotti",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Lingotti",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Lingotti",
             chats_title_no_number: "Tutte le chat ufficiali del regno",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -262,26 +258,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "No atacar ni explorar edificios de clanes (fuertes, capitales, etc.) en ningún reino.",
             section4_title_no_number: "Corte",
             rule4_1: "Todos los ataques y exploraciones ilegales pueden ser compensados o respondidos con represalias, no ambos.",
-            rule4_2: "Si busca compensación, siga el procedimiento de la sección 5. Las reglas de compensación están en la sección 5), si busca represalias, consulte la sección 4.",
-            rule4_2_edited_note: "(Nota: el texto original hacía referencia a 5.3, probablemente significaba 5. Las reglas de compensación están en la sección 5)",
-            rule4_3: "Se espera que todos los jugadores gestionen la compensación entre ellos en un plazo de 24 horas. Si el problema no puede resolverse, el diplomático del clan se hace cargo y si aún no se resuelve en las siguientes 24 horas, presente el problema al juez.",
-            rule4_4: "Todas las reclamaciones de compensación por un ataque ilegal deben presentarse en un plazo de 72 horas o no se aceptará ninguna reclamación.",
-            rule4_5: "No pagar la compensación ordenada por la corte resultará en estado de proscrito (outlaw status) hasta que se pague.",
-            rule4_6: "Todas las decisiones de la Corte son finales.",
-            rule4_7: "Los jugadores <strong>Gandafes</strong> y <strong>KingdomOfGAG</strong> han sido nombrados jueces del reino. Se encargarán de las salas de Dragon Mound y Wellspring. También se ocupan de todos los asuntos que no pueden resolverse entre diplomáticos. Sus decisiones deben ser respetadas y seguidas siempre. Las violaciones de esto conducirán a malos títulos o estado de proscrito.", // Zvýraznené mená
+            rule4_2: "Si busca compensación, siga el procedimiento del punto 4.4, si busca represalias, consulte la sección 4.3.", // Updated
+            rule4_3: "Los ataques de represalia se basan en golpe por golpe.", // Added
+            rule4_4: "Se espera que todos los jugadores gestionen la compensación entre ellos en un plazo de 24 horas. Si el problema no puede resolverse, el diplomático del clan se hace cargo y si aún no se resuelve en las siguientes 24 horas, presente el problema al juez.", // Was 4.3
+            rule4_5: "Todas las reclamaciones de compensación por un ataque ilegal deben presentarse en un plazo de 72 horas o no se aceptará ninguna reclamación.", // Was 4.4
+            rule4_6: "No pagar la compensación ordenada por la corte resultará en estado de proscrito (outlaw status) hasta que se pague.", // Was 4.5
+            rule4_7: "Los jugadores <strong>Gandafes</strong> y <strong>KingdomOfGAG</strong> han sido nombrados jueces del reino. Se encargarán de las salas de Dragon Mound y Wellspring. También se ocupan de todos los asuntos que no pueden resolverse entre diplomáticos. Sus decisiones deben ser respetadas y seguidas siempre. Todas las decisiones de la Corte son finales. Las violaciones de esto conducirán a malos títulos o estado de proscrito.", // Updated
             section5_title_no_number: "Impuestos",
             rule5_1: "Se espera que todos los jugadores paguen todos sus impuestos de manera oportuna.",
             rule5_2: "Los valores que se enumeran a continuación son los lingotes (ingots) máximos permitidos en su ciudad (sobre la producción de 1 día). Si excede estos números, cualquiera puede atacar su ciudad para cobrar los impuestos. Si el atacante no logra obtener suficientes lingotes (el juego puede mostrar un valor desactualizado, lingotes enviados antes del ataque...) el ataque se considerará ilegal.",
             tax_header_level: "Niveles de ciudad",
             tax_header_ingots: "Máximo de lingotes permitidos en la ciudad",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Lingotes", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Lingotes", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Lingotes", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Lingotes", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Lingotes",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Lingotes",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Lingotes",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Lingotes",
             chats_title_no_number: "Todos los chats oficiales del reino",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -318,26 +313,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "Pas d'attaque ni de reconnaissance des bâtiments de clan (forts, capitales, etc.) dans aucun royaume.",
             section4_title_no_number: "Cour",
             rule4_1: "Toutes les attaques et reconnaissances illégales peuvent être soit compensées, soit faire l'objet de représailles, mais pas les deux.",
-            rule4_2: "Si vous demandez une compensation, suivez la procédure de la section 5. Les règles de compensation se trouvent à la section 5), si vous cherchez des représailles, voir la section 4.",
-            rule4_2_edited_note: "(Note : Le texte original faisait référence à 5.3, voulait probablement dire 5. Les règles de compensation se trouvent à la section 5)",
-            rule4_3: "Tous les joueurs sont censés régler la compensation entre eux dans les 24 heures. Si le problème ne peut être résolu, le diplomate du clan prend le relais et s'il n'est toujours pas résolu dans les 24 heures suivantes, présentez le problème au juge.",
-            rule4_4: "Toutes les demandes de compensation pour une attaque illégale doivent être soumises dans les 72 heures, sinon aucune demande ne sera honorée.",
-            rule4_5: "Le non-paiement de la compensation ordonnée par le tribunal entraînera le statut de hors-la-loi (outlaw status) jusqu'à ce qu'elle soit payée.",
-            rule4_6: "Toutes les décisions de la Cour sont définitives.",
-            rule4_7: "Les joueurs <strong>Gandafes</strong> et <strong>KingdomOfGAG</strong> ont été nommés juges pour le royaume. Ils s'occuperont des salles Dragon Mound et Wellspring. Ils s'occupent également de tous les problèmes qui ne peuvent être résolus entre diplomates. Leurs décisions doivent être respectées et suivies en tout temps. Les violations de cela entraîneront de mauvais titres ou le statut de hors-la-loi.", // Zvýraznené mená
+            rule4_2: "Si vous demandez une compensation, suivez la procédure du point 4.4, si vous cherchez des représailles, voir la section 4.3.", // Updated
+            rule4_3: "Les attaques de représailles se font coup pour coup.", // Added
+            rule4_4: "Tous les joueurs sont censés régler la compensation entre eux dans les 24 heures. Si le problème ne peut être résolu, le diplomate du clan prend le relais et s'il n'est toujours pas résolu dans les 24 heures suivantes, présentez le problème au juge.", // Was 4.3
+            rule4_5: "Toutes les demandes de compensation pour une attaque illégale doivent être soumises dans les 72 heures, sinon aucune demande ne sera honorée.", // Was 4.4
+            rule4_6: "Le non-paiement de la compensation ordonnée par le tribunal entraînera le statut de hors-la-loi (outlaw status) jusqu'à ce qu'elle soit payée.", // Was 4.5
+            rule4_7: "Les joueurs <strong>Gandafes</strong> et <strong>KingdomOfGAG</strong> ont été nommés juges pour le royaume. Ils s'occuperont des salles Dragon Mound et Wellspring. Ils s'occupent également de tous les problèmes qui ne peuvent être résolus entre diplomates. Leurs décisions doivent être respectées et suivies en tout temps. Toutes les décisions de la Cour sont définitives. Les violations de cela entraîneront de mauvais titres ou le statut de hors-la-loi.", // Updated
             section5_title_no_number: "Taxes",
             rule5_1: "Tous les joueurs sont censés payer toutes leurs taxes en temps voulu.",
             rule5_2: "Les valeurs indiquées ci-dessous correspondent au nombre maximum de lingots (ingots) autorisés dans votre ville (au-delà de la production d'une journée). Si vous dépassez ces chiffres, n'importe qui peut attaquer votre ville pour collecter les taxes. Si l'attaquant ne parvient pas à obtenir suffisamment de lingots (le jeu peut afficher une valeur obsolète, lingots envoyés avant l'attaque...), l'attaque sera considérée comme illégale.",
             tax_header_level: "Niveaux de ville",
             tax_header_ingots: "Lingots maximum autorisés dans la ville",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Lingots", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Lingots", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Lingots", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Lingots", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Lingots",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Lingots",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Lingots",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Lingots",
             chats_title_no_number: "Tous les chats officiels du royaume",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -374,26 +368,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "Não atacar ou explorar edifícios de clãs (fortes, capitais, etc.) em nenhum reino.",
             section4_title_no_number: "Tribunal",
             rule4_1: "Todos os ataques e explorações ilegais podem ser compensados ou retaliados, não ambos.",
-            rule4_2: "Se buscar compensação, siga o procedimento na seção 5. As regras de compensação estão na seção 5), se buscar retaliação, veja a seção 4.",
-            rule4_2_edited_note: "(Nota: O texto original fazia referência a 5.3, provavelmente significava 5. As regras de compensação estão na seção 5)",
-            rule4_3: "Espera-se que todos os jogadores resolvam a compensação entre si dentro de 24 horas. Se o problema não puder ser resolvido, o diplomata do clã assume e, se ainda não for resolvido nas próximas 24 horas, apresente o problema ao juiz.",
-            rule4_4: "Todas as reivindicações de compensação por um ataque ilegal devem ser enviadas dentro de 72 horas ou nenhuma reivindicação será honrada.",
-            rule4_5: "Não pagar a compensação ordenada pelo tribunal resultará em status de fora da lei (outlaw status) até que seja paga.",
-            rule4_6: "Todas as decisões do Tribunal são finais.",
-            rule4_7: "Os jogadores <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> foram nomeados juízes do reino. Eles cuidarão das salas Dragon Mound e Wellspring. Eles também cuidam de todas as questões que não podem ser resolvidas entre diplomatas. Suas decisões devem ser respeitadas e seguidas sempre. Violações disso levarão a títulos ruins ou status de fora da lei.", // Zvýraznené mená
+            rule4_2: "Se buscar compensação, siga o procedimento no ponto 4.4, se buscar retaliação, veja a seção 4.3.", // Updated
+            rule4_3: "Ataques de retaliação são na base de um acerto por um acerto.", // Added
+            rule4_4: "Espera-se que todos os jogadores resolvam a compensação entre si dentro de 24 horas. Se o problema não puder ser resolvido, o diplomata do clã assume e, se ainda não for resolvido nas próximas 24 horas, apresente o problema ao juiz.", // Was 4.3
+            rule4_5: "Todas as reivindicações de compensação por um ataque ilegal devem ser enviadas dentro de 72 horas ou nenhuma reivindicação será honrada.", // Was 4.4
+            rule4_6: "Não pagar a compensação ordenada pelo tribunal resultará em status de fora da lei (outlaw status) até que seja paga.", // Was 4.5
+            rule4_7: "Os jogadores <strong>Gandafes</strong> e <strong>KingdomOfGAG</strong> foram nomeados juízes do reino. Eles cuidarão das salas Dragon Mound e Wellspring. Eles também cuidam de todas as questões que não podem ser resolvidas entre diplomatas. Suas decisões devem ser respeitadas e seguidas sempre. Todas as decisões do Tribunal são finais. Violações disso levarão a títulos ruins ou status de fora da lei.", // Updated
             section5_title_no_number: "Impostos",
             rule5_1: "Espera-se que todos os jogadores paguem todos os seus impostos em tempo hábil.",
             rule5_2: "Os valores listados abaixo são os lingotes (ingots) máximos permitidos em sua cidade (acima da produção de 1 dia). Se você exceder esses números, qualquer pessoa pode atacar sua cidade para coletar os impostos. Se o atacante falhar em obter lingotes suficientes (o jogo pode mostrar valor desatualizado, lingotes enviados antes do ataque...), o ataque será considerado ilegal.",
             tax_header_level: "Níveis da cidade",
             tax_header_ingots: "Lingotes máximos permitidos na cidade",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 Lingotes", // Zmenené písmeno
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 Lingotes", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 Lingotes", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 Lingotes", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 Lingotes",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 Lingotes",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 Lingotes",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 Lingotes",
             chats_title_no_number: "Todos os chats oficiais do reino",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -430,26 +423,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "Запрещено атаковать и разведывать клановые здания (форты, столицы и т. д.) в любом королевстве.",
             section4_title_no_number: "Суд",
             rule4_1: "Все незаконные атаки и разведка могут быть либо компенсированы, либо отмщены, но не то и другое вместе.",
-            rule4_2: "Если вы ищете компенсацию, следуйте процедуре в разделе 5. Правила компенсации находятся в разделе 5), если вы ищете возмездия, см. раздел 4.",
-            rule4_2_edited_note: "(Примечание: В оригинальном тексте была ссылка на 5.3, вероятно, имелся в виду раздел 5. Правила компенсации находятся в разделе 5)",
-            rule4_3: "Ожидается, что все игроки урегулируют компенсацию между собой в течение 24 часов. Если проблема не может быть решена, ее берет на себя дипломат клана, и если она все еще не решена в течение следующих 24 часов, представьте проблему судье.",
-            rule4_4: "Все претензии на компенсацию за незаконную атаку должны быть поданы в течение 72 часов, иначе претензия не будет удовлетворена.",
-            rule4_5: "Неуплата компенсации, назначенной судом, приведет к статусу преступника (outlaw status) до тех пор, пока она не будет выплачена.",
-            rule4_6: "Все решения Суда являются окончательными.",
-            rule4_7: "Игроки <strong>Gandafes</strong> и <strong>KingdomOfGAG</strong> назначены судьями королевства. Они будут заниматься комнатами Драконьих Курганов и Источников. Они также занимаются всеми вопросами, которые не могут быть решены между дипломатами. Их решения должны всегда уважаться и выполняться. Нарушения этого приведут к плохим титулам или статусу преступника.", // Zvýraznené mená
+            rule4_2: "Если вы ищете компенсацию, следуйте процедуре в пункте 4.4, если вы ищете возмездия, см. раздел 4.3.", // Updated
+            rule4_3: "Ответные атаки осуществляются по принципу удар за удар.", // Added
+            rule4_4: "Ожидается, что все игроки урегулируют компенсацию между собой в течение 24 часов. Если проблема не может быть решена, ее берет на себя дипломат клана, и если она все еще не решена в течение следующих 24 часов, представьте проблему судье.", // Was 4.3
+            rule4_5: "Все претензии на компенсацию за незаконную атаку должны быть поданы в течение 72 часов, иначе претензия не будет удовлетворена.", // Was 4.4
+            rule4_6: "Неуплата компенсации, назначенной судом, приведет к статусу преступника (outlaw status) до тех пор, пока она не будет выплачена.", // Was 4.5
+            rule4_7: "Игроки <strong>Gandafes</strong> и <strong>KingdomOfGAG</strong> назначены судьями королевства. Они будут заниматься комнатами Драконьих Курганов и Источников. Они также занимаются всеми вопросами, которые не могут быть решены между дипломатами. Их решения должны всегда уважаться и выполняться. Все решения Суда являются окончательными. Нарушения этого приведут к плохим титулам или статусу преступника.", // Updated
             section5_title_no_number: "Налоги",
             rule5_1: "Ожидается, что все игроки будут своевременно платить все свои налоги.",
             rule5_2: "Указанные ниже значения представляют собой максимально допустимое количество слитков (ingots) в вашем городе (сверх 1-дневного производства). Если вы превысите эти цифры, любой может атаковать ваш город, чтобы собрать налоги. Если атакующий не сможет получить достаточно слитков (игра может показывать устаревшее значение, слитки отправлены до атаки...), атака будет считаться незаконной.",
             tax_header_level: "Уровни города",
             tax_header_ingots: "Максимально допустимое количество слитков в городе",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 слитков", // Zmenené písmeno (ingots -> слитков)
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 слитков", // Zmenené písmeno
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 слитков", // Zmenené písmeno
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 слитков", // Zmenené písmeno
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 слитков",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 слитков",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 слитков",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 слитков",
             chats_title_no_number: "Все официальные чаты королевства",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -486,26 +478,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "禁止在任何王国攻击和侦察部落建筑（堡垒、首都等）。",
             section4_title_no_number: "法庭",
             rule4_1: "所有非法攻击和侦察可以获得补偿或进行报复，但不能两者兼得。",
-            rule4_2: "如果寻求补偿，请遵循第 5 节中的程序。补偿规则在第 5 节中），如果寻求报复，请参见第 4 节。",
-            rule4_2_edited_note: "（注意：原始文本引用了 5.3，可能意指 5。补偿规则在第 5 节）",
-            rule4_3: "所有玩家应在 24 小时内自行处理补偿事宜。 如果问题无法解决，则由部落外交官接管，如果在接下来的 24 小时内仍未解决，则将问题提交给法官。",
-            rule4_4: "所有非法攻击的补偿索赔必须在 72 小时内提交，否则索赔将不予受理。",
-            rule4_5: "不支付法院命令的补偿将导致被列为不法之徒 (outlaw status)，直到付清为止。",
-            rule4_6: "法庭的所有判决均为最终判决。",
-            rule4_7: "玩家 <strong>Gandafes</strong> 和 <strong>KingdomOfGAG</strong> 已被任命为王国的法官。 他们将负责龙丘和泉水房间。 他们还负责处理外交官之间无法解决的所有问题。 必须始终尊重并遵守他们的决定。 违反规定将导致不良头衔或不法之徒身份。", // Zvýraznené mená
+            rule4_2: "如果寻求补偿，请遵循第 4.4 条中的程序，如果寻求报复，请参见第 4.3 节。", // Updated
+            rule4_3: "报复性攻击是基于一对一的打击。", // Added
+            rule4_4: "所有玩家应在 24 小时内自行处理补偿事宜。 如果问题无法解决，则由部落外交官接管，如果在接下来的 24 小时内仍未解决，则将问题提交给法官。", // Was 4.3
+            rule4_5: "所有非法攻击的补偿索赔必须在 72 小时内提交，否则索赔将不予受理。", // Was 4.4
+            rule4_6: "不支付法院命令的补偿将导致被列为不法之徒 (outlaw status)，直到付清为止。", // Was 4.5
+            rule4_7: "玩家 <strong>Gandafes</strong> 和 <strong>KingdomOfGAG</strong> 已被任命为王国的法官。 他们将负责龙丘和泉水房间。 他们还负责处理外交官之间无法解决的所有问题。 必须始终尊重并遵守他们的决定。 法庭的所有判决均为最终判决。 违反规定将导致不良头衔或不法之徒身份。", // Updated
             section5_title_no_number: "税收",
             rule5_1: "所有玩家都应按时缴纳所有税款。",
             rule5_2: "下面列出的值是您城市中允许的最大铸锭 (ingots) 数量（超过 1 天的产量）。 如果您超过这些数字，任何人都可以攻击您的城市以征收税款。 如果攻击者未能获得足够的铸锭（游戏可能显示过时的值，攻击前发送的铸锭...），攻击将被视为非法。",
             tax_header_level: "城市等级",
             tax_header_ingots: "城市中允许的最大铸锭数量",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 铸锭", // Ponechané (bez veľkého/malého písmena)
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 铸锭", // Ponechané
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 铸锭", // Ponechané
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 铸锭", // Ponechané
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 铸锭",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 铸锭",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 铸锭",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 铸锭",
             chats_title_no_number: "所有王国官方聊天室",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -542,26 +533,25 @@ document.addEventListener('DOMContentLoaded', () => {
             rule3_3: "किसी भी किंगडम में क्लैन भवनों (किलों, राजधानियों, आदि) पर कोई हमला और स्काउटिंग नहीं।",
             section4_title_no_number: "न्यायालय",
             rule4_1: "सभी अवैध हमलों और स्काउटिंग को या तो मुआवजा दिया जा सकता है या बदला लिया जा सकता है, दोनों नहीं।",
-            rule4_2: "यदि मुआवजा मांग रहे हैं, तो धारा 5 में प्रक्रिया का पालन करें। मुआवजे के नियम धारा 5 में हैं), यदि प्रतिशोध चाहते हैं तो धारा 4 देखें।",
-            rule4_2_edited_note: "(नोट: मूल पाठ में 5.3 का संदर्भ दिया गया था, संभवतः इसका मतलब 5 था। मुआवजे के नियम धारा 5 में हैं)",
-            rule4_3: "सभी खिलाड़ियों से अपेक्षा की जाती है कि वे 24 घंटे के भीतर आपस में मुआवजे का निपटारा करें। यदि मुद्दा हल नहीं किया जा सकता है, तो क्लैन राजनयिक कार्यभार संभालता है और यदि अगले 24 घंटों के भीतर यह अभी भी हल नहीं होता है, तो न्यायाधीश के समक्ष मुद्दा प्रस्तुत करें।",
-            rule4_4: "एक अवैध हमले के लिए सभी मुआवजे के दावों को 72 घंटों के भीतर प्रस्तुत किया जाना चाहिए अन्यथा किसी भी दावे का सम्मान नहीं किया जाएगा।",
-            rule4_5: "अदालत द्वारा आदेशित मुआवजे का भुगतान न करने पर गैरकानूनी स्थिति (outlaw status) होगी जब तक कि इसका भुगतान नहीं किया जाता।",
-            rule4_6: "न्यायालय के सभी निर्णय अंतिम हैं।",
-            rule4_7: "खिलाड़ी <strong>Gandafes</strong> और <strong>KingdomOfGAG</strong> को किंगडम के लिए न्यायाधीश नियुक्त किया गया है। वे ड्रैगन माउंड और वेलस्प्रिंग कमरों का ध्यान रखेंगे। वे उन सभी मुद्दों का भी ध्यान रखते हैं जिन्हें राजनयिकों के बीच हल नहीं किया जा सकता है। उनके निर्णयों का हमेशा सम्मान और पालन किया जाना चाहिए। इसका उल्लंघन करने पर खराब खिताब या गैरकानूनी स्थिति होगी।", // Zvýraznené mená
+            rule4_2: "यदि मुआवजा मांग रहे हैं, तो बिंदु 4.4 में प्रक्रिया का पालन करें, यदि प्रतिशोध चाहते हैं तो धारा 4.3 देखें।", // Updated
+            rule4_3: "प्रतिशोध के हमले हिट-फॉर-हिट आधार पर होते हैं।", // Added
+            rule4_4: "सभी खिलाड़ियों से अपेक्षा की जाती है कि वे 24 घंटे के भीतर आपस में मुआवजे का निपटारा करें। यदि मुद्दा हल नहीं किया जा सकता है, तो क्लैन राजनयिक कार्यभार संभालता है और यदि अगले 24 घंटों के भीतर यह अभी भी हल नहीं होता है, तो न्यायाधीश के समक्ष मुद्दा प्रस्तुत करें।", // Was 4.3
+            rule4_5: "एक अवैध हमले के लिए सभी मुआवजे के दावों को 72 घंटों के भीतर प्रस्तुत किया जाना चाहिए अन्यथा किसी भी दावे का सम्मान नहीं किया जाएगा।", // Was 4.4
+            rule4_6: "अदालत द्वारा आदेशित मुआवजे का भुगतान न करने पर गैरकानूनी स्थिति (outlaw status) होगी जब तक कि इसका भुगतान नहीं किया जाता।", // Was 4.5
+            rule4_7: "खिलाड़ी <strong>Gandafes</strong> और <strong>KingdomOfGAG</strong> को किंगडम के लिए न्यायाधीश नियुक्त किया गया है। वे ड्रैगन माउंड और वेलस्प्रिंग कमरों का ध्यान रखेंगे। वे उन सभी मुद्दों का भी ध्यान रखते हैं जिन्हें राजनयिकों के बीच हल नहीं किया जा सकता है। उनके निर्णयों का हमेशा सम्मान और पालन किया जाना चाहिए। न्यायालय के सभी निर्णय अंतिम हैं। इसका उल्लंघन करने पर खराब खिताब या गैरकानूनी स्थिति होगी।", // Updated
             section5_title_no_number: "कर",
             rule5_1: "सभी खिलाड़ियों से अपेक्षा की जाती है कि वे अपने सभी करों का समय पर भुगतान करें।",
             rule5_2: "नीचे सूचीबद्ध मान आपके शहर में अनुमत अधिकतम सिल्लियां (ingots) हैं (1-दिन के उत्पादन से अधिक)। यदि आप इन नंबरों से अधिक हैं, तो कोई भी कर एकत्र करने के लिए आपके शहर पर हमला कर सकता है। यदि हमलावर पर्याप्त सिल्लियां प्राप्त करने में विफल रहता है (गेम पुराना मान दिखा सकता है, हमले से पहले भेजी गई सिल्लियां...) तो हमला अवैध माना जाएगा।",
             tax_header_level: "शहर के स्तर",
             tax_header_ingots: "शहर में अनुमत अधिकतम सिल्लियां",
-            tax_range_1: "01 - 24", // Pridané medzery
-            tax_ingots_1: "10000 सिल्लियां", // Ponechané (bez veľkého/malého písmena)
-            tax_range_2: "25 - 34", // Pridané medzery
-            tax_ingots_2: "30000 सिल्लियां", // Ponechané
-            tax_range_3: "35 - 39", // Pridané medzery
-            tax_ingots_3: "40000 सिल्लियां", // Ponechané
-            tax_range_4: "40 - 45", // Pridané medzery
-            tax_ingots_4: "50000 सिल्लियां", // Ponechané
+            tax_range_1: "01 - 24",
+            tax_ingots_1: "10000 सिल्लियां",
+            tax_range_2: "25 - 34",
+            tax_ingots_2: "30000 सिल्लियां",
+            tax_range_3: "35 - 39",
+            tax_ingots_3: "40000 सिल्लियां",
+            tax_range_4: "40 - 45",
+            tax_ingots_4: "50000 सिल्लियां",
             chats_title_no_number: "सभी आधिकारिक किंगडम चैट",
             chat_roe: "K105-ROE",
             chat_dm: "K105/DM",
@@ -577,44 +567,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         translatableElements.forEach(el => {
             const key = el.getAttribute('data-translate');
+            // Získame preložený text, s fallbackom na EN, alebo zobrazíme kľúč ak chýba aj EN
             const translatedText = langData[key] !== undefined ? langData[key] : (translations['en'][key] !== undefined ? translations['en'][key] : `[${key}]`);
 
             if (el.tagName === 'TITLE') {
                 el.textContent = translatedText;
             } else {
-                 const ruleNumberSpan = el.querySelector('span.rule-number');
-                 if (ruleNumberSpan) {
-                     let currentTextNode = ruleNumberSpan.nextSibling;
-                     while(currentTextNode && currentTextNode.nodeType !== Node.TEXT_NODE) {
-                         currentTextNode = currentTextNode.nextSibling;
-                     }
-                     if(currentTextNode) {
-                         currentTextNode.textContent = ' ' + translatedText;
-                     } else {
-                         el.appendChild(document.createTextNode(' ' + translatedText));
-                     }
-                     let nextNode = ruleNumberSpan.nextSibling?.nextSibling;
-                      while(nextNode) {
-                          if(nextNode.nodeType === Node.TEXT_NODE) {
-                              let toRemove = nextNode;
-                              nextNode = nextNode.nextSibling;
-                              el.removeChild(toRemove);
-                          } else {
-                               // Ak narazíme na iný element (napr. <strong>), preskočíme ho
-                               nextNode = nextNode.nextSibling;
-                          }
-                      }
-                       // Špeciálna úprava pre pravidlo 4.7, aby sa HTML tagy v preklade aplikovali
-                      if (key === 'rule4_7') {
-                           el.innerHTML = ruleNumberSpan.outerHTML + ' ' + translatedText;
-                      }
-
-                 } else if (key === 'rule4_7') { // Aj pre pravidlo 4.7 bez čísla (ak by bolo mimo <ol>)
-                      el.innerHTML = translatedText; // Aplikuj HTML tagy
-                 }
-                 else {
-                      el.innerHTML = translatedText; // Pre ostatné elementy
-                 }
+                // Použijeme innerHTML pre všetky ostatné elementy,
+                // aby sa HTML tagy (napr. <strong>) v prekladoch správne renderovali.
+                el.innerHTML = translatedText;
             }
 
             // Nastavenie data-label pre mobilnú tabuľku
@@ -624,6 +585,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 else if (key.startsWith('tax_ingots_')) labelKey = 'tax_header_ingots';
 
                 if (labelKey) {
+                     // Získame preložený text hlavičky, s fallbackom na EN alebo kľúč
                      const labelText = langData[labelKey] !== undefined ? langData[labelKey] : (translations['en'][labelKey] !== undefined ? translations['en'][labelKey] : `[${labelKey}]`);
                      el.setAttribute('data-label', labelText + ': ');
                  } else {

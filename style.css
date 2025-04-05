@@ -128,27 +128,24 @@ h1 {
 
 /* Nadpisy sekcií H2 */
 h2 {
-    /* border-bottom: 1px solid var(--border-color-light); */ /* Zmazané, číslovanie to nahradí vizuálne */
-    padding-bottom: 5px; /* Menší padding */
+    padding-bottom: 5px;
     margin-top: 40px;
-    margin-bottom: 25px; /* Väčší margin pod nadpisom kvôli floatovanému obrázku */
+    margin-bottom: 25px;
     font-size: 1.5em;
     transition: border-color 0.3s ease;
-    clear: left; /* Zaistí, že nadpis začne pod prípadným plávajúcim obsahom z predchádzajúcej sekcie (aj keď clearfix na section by mal stačiť) */
+    clear: left;
 }
 
 h2::before {
-    counter-increment: sectionCounter; /* Zvýši čítač sekcií */
-    content: counter(sectionCounter) ". "; /* Zobrazí číslo sekcie pred nadpisom */
-    margin-right: 5px; /* Malý odstup za číslom */
+    counter-increment: sectionCounter;
+    content: counter(sectionCounter) ". ";
+    margin-right: 5px;
 }
-
 
 body.dark-mode h1,
 body.dark-mode h2 {
     border-bottom-color: var(--border-color-dark);
 }
-
 
 .effective-date {
     text-align: center;
@@ -161,10 +158,10 @@ body.dark-mode .effective-date {
 }
 
 section {
-    margin-bottom: 30px; /* Menší odstup medzi sekciami */
-    counter-reset: ruleCounter; /* Resetuje čítač pravidiel pre každú sekciu */
+    margin-bottom: 30px;
+    counter-reset: ruleCounter;
 }
-/* Clearfix pre sekcie kvôli floatovaným obrázkom */
+
 section::after {
     content: "";
     display: table;
@@ -174,11 +171,11 @@ section::after {
 /* --- Obrázky --- */
 .chapter-image {
     float: right;
-    max-width: 400px; /* Maximálna šírka obrázku */
+    max-width: 200px;
     height: auto;
-    margin-left: 25px; /* Odsadenie od textu vľavo */
-    margin-bottom: 15px; /* Odsadenie pod obrázkom */
-    margin-top: 5px; /* Malý odstup zhora */
+    margin-left: 25px;
+    margin-bottom: 15px;
+    margin-top: 5px;
     border: 1px solid var(--image-border-light);
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
@@ -189,47 +186,43 @@ body.dark-mode .chapter-image {
     box-shadow: 0 2px 4px rgba(255,255,255,0.1);
 }
 
-/* --- Číslované zoznamy (Pravidlá) --- */
+/* --- Číslované zoznamy (Pravidlá - teraz platí aj pre sekciu 5) --- */
 section ol {
-    list-style: none; /* Skryť predvolené číslovanie */
-    padding-left: 0; /* Resetovať odsadenie */
-    margin-left: 10px; /* Malé ľavé odsadenie celého bloku zoznamu */
+    list-style: none;
+    padding-left: 0;
+    margin-left: 10px;
 }
 
 section ol li {
-    padding-left: 3.5em; /* Vytvoriť miesto pre číslovanie (napr. 1.10.) */
-    position: relative; /* Potrebné pre absolútne poziciovanie ::before */
-    margin-bottom: 12px; /* Odstup medzi pravidlami */
+    padding-left: 3.5em;
+    position: relative;
+    margin-bottom: 12px;
     line-height: 1.6;
 }
 
 section ol li::before {
-    counter-increment: ruleCounter; /* Zvýši čítač pravidiel */
-    content: counter(sectionCounter) "." counter(ruleCounter) "."; /* Zobrazí číslo sekcie.číslo pravidla */
+    counter-increment: ruleCounter;
+    content: counter(sectionCounter) "." counter(ruleCounter) ".";
     font-weight: bold;
-    position: absolute; /* Vybrať číslovanie z toku */
-    left: 0; /* Umiestniť ho na začiatok odsadenia */
-    width: 3em; /* Šírka pre číslovanie */
-    text-align: right; /* Zarovnať čísla doprava */
-    padding-right: 8px; /* Odsadenie za číslom */
-    display: inline-block; /* Potrebné pre width */
+    position: absolute;
+    left: 0;
+    width: 3em;
+    text-align: right;
+    padding-right: 8px;
+    display: inline-block;
 }
 
-/* --- Špeciálne pravidlá pre sekciu 5 (Dane) --- */
-/* Odseky namiesto zoznamu */
-section p .rule-number { /* Štýlovanie pre ručne pridané čísla v odsekoch */
-    font-weight: bold;
-    margin-right: 8px;
-}
+/* Odstránené pravidlo pre .rule-number, už nie je potrebné */
 
 /* Tabuľka daní */
 table.tax-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 20px; /* Odsadenie od zoznamu pravidiel nad ňou */
     margin-bottom: 20px;
     border: 1px solid var(--table-border-light);
     transition: border-color 0.3s ease;
+    clear: both; /* Pridané pre istotu, ak by predchádzajúci obsah floatoval */
 }
 body.dark-mode table.tax-table {
     border-color: var(--table-border-dark);
@@ -257,19 +250,19 @@ body.dark-mode table.tax-table th {
 }
 
 /* --- Špeciálne pravidlá pre sekciu 6 (Chaty) --- */
-section ul { /* Zoznam s odrážkami */
+section ul {
    list-style: disc;
    padding-left: 30px;
    margin-left: 10px;
 }
 section ul li {
-    padding-left: 0; /* Reset odsadenia z <ol> */
-    position: static; /* Reset pozície */
+    padding-left: 0;
+    position: static;
     margin-bottom: 8px;
 }
-section ul li::before {
-    content: ""; /* Žiadne automatické číslovanie */
-    display: none; /* Úplne skryť */
+section ul li::before { /* Zabezpečí, že sa tu nepoužije číslovanie */
+    content: "";
+    display: none;
 }
 
 
@@ -300,11 +293,16 @@ body.dark-mode section ul li[data-translate^="chat_"] {
     background-color: var(--code-bg-dark);
 }
 
+/* Zvýraznenie mien v pravidle 4.7 */
+strong {
+    font-weight: bold; /* Štandardné, ale pre istotu */
+}
+
 
 /* Responzivita pre menšie obrazovky */
 @media (max-width: 768px) {
     .chapter-image {
-        max-width: 150px; /* Menšie obrázky na tabletoch */
+        max-width: 150px;
         margin-left: 15px;
     }
 }
@@ -346,17 +344,17 @@ body.dark-mode section ul li[data-translate^="chat_"] {
 
     /* Obrázky pod textom na mobiloch */
     .chapter-image {
-        float: none; /* Zrušiť float */
-        display: block; /* Zobraziť ako blok */
-        max-width: 80%; /* Väčšia šírka, keď je sám */
-        margin: 15px auto 20px auto; /* Centrovať a dať odstup */
+        float: none;
+        display: block;
+        max-width: 80%;
+        margin: 15px auto 20px auto;
     }
 
     section ol li {
-        padding-left: 3em; /* Prípadne upraviť odsadenie pre mobil */
+        padding-left: 3em;
     }
     section ol li::before {
-        width: 2.5em; /* Prípadne upraviť šírku číslovania */
+        width: 2.5em;
     }
 
     table.tax-table,
@@ -365,12 +363,12 @@ body.dark-mode section ul li[data-translate^="chat_"] {
     table.tax-table th,
     table.tax-table td,
     table.tax-table tr {
-        display: block; /* Zmeniť tabuľku na bloky pre lepšiu čitateľnosť */
+        display: block;
     }
     table.tax-table thead tr {
         position: absolute;
         top: -9999px;
-        left: -9999px; /* Skryť hlavičku */
+        left: -9999px;
     }
      table.tax-table tr {
          border: 1px solid var(--table-border-light);
@@ -381,10 +379,11 @@ body.dark-mode section ul li[data-translate^="chat_"] {
      }
     table.tax-table td {
         border: none;
-        border-bottom: 1px solid #eee; /* Čiara medzi "riadkami" v bloku */
+        border-bottom: 1px solid #eee;
         position: relative;
-        padding-left: 50%; /* Miesto pre "hlavičku" */
-        text-align: right; /* Zarovnať hodnotu doprava */
+        padding-left: 50%;
+        text-align: right;
+        min-height: 1.3em; /* Aby sa text nezalomil pod labelom ak je krátky */
     }
      body.dark-mode table.tax-table td {
          border-bottom: 1px solid #444;
@@ -396,30 +395,17 @@ body.dark-mode section ul li[data-translate^="chat_"] {
         width: 45%;
         padding-right: 10px;
         white-space: nowrap;
-        content: attr(data-translate); /* Zobraziť kľúč prekladu ako "hlavičku" */
+        content: attr(data-label); /* Použije data-label z HTML */
         font-weight: bold;
-        text-align: left; /* Zarovnať "hlavičku" doľava */
-        /* Tento obsah bude treba nastaviť dynamicky alebo mať lepšie riešenie pre preklad */
-        /* Jednoduchšie: Pridať data-label atribút do HTML a použiť ten */
-        /* Upravím HTML, aby toto fungovalo lepšie */
+        text-align: left;
     }
-    /* Pridanie data-label do HTML pre mobilnú tabuľku: */
-     table.tax-table td[data-translate="tax_range_1"]::before { content: attr(data-label); }
-     table.tax-table td[data-translate="tax_ingots_1"]::before { content: attr(data-label); }
-     /* ... a tak ďalej pre ostatné ... */
-     /* Tento prístup s data-label je lepší */
-
+     table.tax-table td:last-child {
+        border-bottom: 0; /* Odstrániť spodnú čiaru poslednej bunky v bloku */
+     }
 
 }
 
-/* Poznámka k pravidlu 4.2 */
+/* Poznámka k pravidlu 4.2 (už neexistuje) */
 span[data-translate="rule4_2_edited_note"] {
-    font-style: italic;
-    font-size: 0.9em;
-    color: #888;
-    display: block;
-    margin-top: 5px;
-}
-body.dark-mode span[data-translate="rule4_2_edited_note"] {
-    color: #bbb;
+   display: none; /* Skryť, keďže odkaz už nie je relevantný */
 }
