@@ -171,7 +171,7 @@ section::after {
 /* --- Obrázky --- */
 .chapter-image {
     float: right;
-    max-width: 200px;
+    max-width: 400px;
     height: auto;
     margin-left: 25px;
     margin-bottom: 15px;
